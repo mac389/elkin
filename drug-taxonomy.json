@@ -1,0 +1,1822 @@
+{
+	"sceletium": {
+		"ingredients": {
+			"mesembrine": ["sri", "pde 4 inhibitor"],
+			"mesembrenone": ["sri", "pde4 inhibitor"]
+		},
+		"effects": ["euphoria", "anxiolytic"],
+		"class": ["plant"]
+	},
+
+	"doxycycline": {
+		"class": ["antibiotics"],
+		"effects": ["antibiotics"]
+	},
+	"bonzai": {
+		"class": ["synthetic cannabinoid"],
+		"effects": ["stimulant", "euphoria"]
+	},
+	"tryptophan": {
+		"class": ["supplement"],
+		"effects": ["unknown"]
+	},
+	"phenylalanine": {
+		"class": ["supplement"],
+		"effects": ["unknown"]
+	},
+	"l-dopa": {
+		"class": ["stimulant", "antidepressant"],
+		"effects": ["unknown"]
+	},
+	"plectranthus scutellarioides": {
+		"effects": ["hallucinogen", "anxiolytic"],
+		"class": ["plant"]
+	},
+	"sound": {
+		"class": "sound",
+		"effects": ["stimulant", "nootropic", "antidepressant", "dissociative"]
+	},
+	"isopropylphenidate": {
+		"effects": ["stimulant"],
+		"class": ["amphetamine"]
+	},
+	"eszopiclone": {
+		"effects": ["stimulant"]
+	},
+	"pennyroyal": {
+		"effects": ["abortifacient"],
+		"class": ["plant"]
+	},
+	"selegiline": {
+		"effects": ["nootropic"],
+		"class": ["maobi"]
+	},
+	"freon": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"oxygen": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"duster": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"paint thinner": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"tetrafluorethane": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"n02": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"topiramate": {
+		"class": ["antiepileptic", "analgesic"],
+		"effects": ["antiepileptic", "analgesic"]
+	},
+	"ether": {
+		"class": ["inhalant"],
+		"effects": ["sedative", "euphoria"]
+	},
+	"gasoline": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"propellant": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"vicks": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"carbon dioxide": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"butane": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"nitrous": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"propane": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+	"amyl nitrite": {
+		"effects": ["euphoria", "dissociative"]
+	},
+	"khat": {
+		"effects": ["sedative", "anxiolytic"],
+		"class": ["plant"]
+	},
+
+	"isobutane": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+
+	"topiramate": {
+		"effects": ["antiepileptic", "anxiolytic"]
+	},
+	"piracetam": {
+		"effects": ["nootropic"]
+	},
+	"pramiracetam": {
+		"effects": ["nootropic"]
+	},
+	"oxiracetam": {
+		"effects": ["nootropic"]
+	},
+	"nitrous oxide": {
+		"class": ["inhalant"],
+		"effects": ["euphoria"]
+	},
+
+	"mda": {
+		"aka": ["methylenedioxyamphetamine", "tenamphetamine"],
+		"class": ["amphetamine"],
+		"effects": ["psychedelic", "stimulant"]
+	},
+
+	"meperidine": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"manaca": {
+		"effects": ["anticoagulant"],
+		"class": ["plant"]
+	},
+	"al-lad": {
+		"class": ["tryptamine"],
+		"effects": ["psychedelic", "stimulant"]
+	},
+
+	"dpt": {
+		"class": ["tryptamine"],
+		"effects": ["psychedelic", "stimulant"]
+	},
+	"aspirin": {
+		"effects": ["analgesic"]
+	},
+
+	"vinpocetine": {
+		"effects": ["nootropic"],
+		"class": ["plant"]
+	},
+
+	"zaleplon": {
+		"effects": ["sedative"],
+		"class": ["pyrazolopyrimidine"]
+	},
+
+	"haloperidol": {
+		"effects": ["antipsychotic"],
+		"class": ["butyrophenone"]
+	},
+
+	"ritonavir": {
+		"effects": ["antiretroviral"],
+		"class": ["protease inhibitor"]
+	},
+	"olanzapine": {
+		"class": ["thienobenzodiazepine"],
+		"effects": ["antipsychotic"]
+	},
+
+	"ziprasidone": {
+		"class": ["thienobenzodiazepine"],
+		"effects": ["antipsychotic"]
+	},
+	"huperzine": {
+		"class": ["sesquiterpene alkaloid", "reversible acetylcholinesterase inhibitor",
+			"NMDA receptor antagonist"
+		],
+		"effects": ["nootropic"]
+	},
+
+	"tapentadol": {
+		"class": ["mu opioid agonist", "nri"],
+		"effects": ["analgesic", "euphoria"]
+	},
+
+	"pentylone": {
+		"class": ["amphetamine"],
+		"effects": ["stimulant", "euphoria"]
+	},
+	"salicin": {
+		"class": ["beta-glucoside"],
+		"effects": ["anti-inflammatory", "analgesic"]
+	},
+
+	"4-aco-det": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+
+	"nicotiana rustica": {
+		"class": ["plant"],
+		"ingredients": ["nicotine", "harman", "norharman", "beta-carbolines"],
+		"effects": ["psychedelic", "entheogen"]
+	},
+
+	"tranylcypromine": {
+		"class": ["maoi"],
+		"effects": ["antidepressant", "anxiolytic"]
+	},
+
+	"linezolid": {
+		"class": ["maoi"],
+		"effects": ["antidepressant", "anxiolytic", "maoi"]
+	},
+	"doet": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"],
+		"aka": ["hecate", "doe"]
+	},
+	"mde": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"],
+		"aka": ["hecate", "doe"]
+	},
+	"mdea": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"],
+		"aka": ["hecate", "doe"]
+	},
+	"methyl-j": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"]
+	},
+	"bk-mdea": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"]
+	},
+	"bk-mdda": {
+		"class": ["amphetamine"],
+		"effects": ["psychedelic"]
+	},
+
+	"propoxyphene": {
+		"class": ["mu opioid agonist", "sri", "nicotinic antagonist"],
+		"effects": ["analgesic", "euphoria"]
+	},
+
+	"meopp": {
+		"class": ["piperazine"],
+		"aka": ["pmpp", "4-mpp", "paraperazine"],
+		"effects": ["anxiolytic"]
+	},
+
+	"4-methylcathinone": {
+		"class": ["substituted cathinone"],
+		"effects": ["entactogen", "psychedelic"]
+	},
+
+	"methylone": {
+		"class": ["substituted cathinone"],
+		"effects": ["entactogen", "psychedelic"]
+	},
+	"ethylcathinone": {
+		"class": ["substituted cathinone"],
+		"effects": ["entactogen", "psychedelic"]
+	},
+
+	"mdma": {
+		"class": ["amphetamine"],
+		"aka": ["ecstasy"],
+		"effects": ["entactogen", "euphoria", "hallucinogen"]
+	},
+	"dmmda": {
+		"class": ["amphetamine"],
+		"effects": ["entactogen", "euphoria", "hallucinogen"]
+	},
+	"tfmpp": {
+		"class": ["piperazine"],
+		"effects": ["entactogen", "euphoria", "hallucinogen"]
+	},
+
+	"mdai": {
+		"class": ["amphetamine"],
+		"effects": ["entactogen", "euphoria", "hallucinogen", "stimulant"]
+	},
+
+	"tma": {
+		"class": ["amphetamine"],
+		"effects": ["entactogen", "euphoria", "hallucinogen", "stimulant"]
+	},
+
+	"valerian": {
+		"effects": ["anxiolytic"],
+		"class": ["plant"]
+	},
+
+	"voacanga africana": {
+		"effects": ["unknown"],
+		"ingredients": ["voacangine"]
+	},
+
+	"zacatechichi": {
+		"effects": ["hallucinogen", "oneirogen"],
+		"ingredients": ["germacranolide", "sesquiterpenes", "acacetin"]
+	},
+
+	"lithium": {
+		"class": ["antipsychotic"],
+		"effects": ["antipsychotic"]
+	},
+	"a-methylfentanyl": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"fentanyl": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"trihexyphenidyl": {
+		"effects": ["anxiolytic"],
+		"class": ["antimuscarinic"]
+	},
+
+	"4-ho-met": {
+		"effects": ["psychedelic", "euphoria"],
+		"class": ["tryptamine"]
+	},
+
+	"atropine": {
+		"effects": ["stimulant"],
+		"class": ["muscarinic antagonist"]
+	},
+	"acacia": {
+		"class": ["plant"],
+		"effects": ["psychedelic"]
+	},
+	"carisoprodol": {
+		"effects": ["relaxant", "sedative"],
+		"class": ["barbiturate"]
+	},
+	"erythroxylum coca": {
+		"effects": ["stimulant"]
+	},
+	"calamus": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["plant"],
+		"ingredients": ["asarones"]
+	},
+	"chlorpromazine": {
+		"class": ["antipsychotic"],
+		"effects": ["antidepressant", "antipsychotic"]
+	},
+
+	"cinnamon": {
+		"class": ["plant"],
+		"effects": ["unknown"]
+	},
+	"psilocybin": {
+		"class": ["plant"],
+		"effects": ["psychedelic", "hallucinogen", "entactogen", "entheogen"]
+	},
+
+	"xenon": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+	"n2o": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+	"chloroform": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+
+	"glue": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+
+	"zopiclone": {
+		"effects": ["anxiolytic", "sedative"],
+		"class": ["cyclopyrrole"]
+	},
+
+	"bk-2c-b": {
+		"class": ["phenylethylamine"],
+		"effects": ["psychedelic"]
+	},
+	"naproxen": {
+		"effects": ["analgesic", "anti-inflammatory"]
+	},
+	"paracetamol": {
+		"effects": ["analgesic", "anti-inflammatory"]
+	},
+
+	"king kong": {
+		"effects": ["stimulant", "anxiolytic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"cannabis": {
+		"class": ["cannabinoid"],
+		"effects": ["sedative", "anxiolytic"]
+	},
+	"k2": {
+		"effects": ["stimulant", "anxiolytic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"ab-fubinaca": {
+		"effects": ["stimulant", "anxiolytic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"jwh-210": {
+		"effects": ["stimulant", "anxiolytic"],
+		"class": ["synthetic cannabinoid", "naphthoylindole"]
+	},
+	"moclobemide": {
+		"effects": ["maoi", "rima"],
+		"class": ["benzamide"]
+	},
+
+	"silene capensis": {
+		"class": ["plant"],
+		"effects": ["oneirogen"]
+	},
+	"gabapentin": {
+		"class": ["antiepileptic"],
+		"effects": ["antiepileptic", "analgesic"]
+	},
+	"2c-e": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-d": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-t-2": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-ef": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-t-4": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-p": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-t-21": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-t-7": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"eszopiclone": {
+		"class": ["cyclopyrrolones"],
+		"effects": ["stimulant"]
+	},
+	"lecithin": {
+		"effects": ["unknown"]
+	},
+	"butylone": {
+		"effects": ["psychedelic", "hallucinogen", "entactogen", "entheogen"],
+		"class": ["phenylethylamine"]
+	},
+	"dioscorea dregeana": {
+		"effects": ["unknown"],
+		"class": ["plant"]
+	},
+	"oxymorphone": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["opioid"]
+	},
+	"opioid": {
+		"effects": ["sedative", "euphoria"]
+	},
+	"mt-45": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["opioid"]
+	},
+	"bromo dragonfly": {
+		"effects": ["psychedelic"],
+		"class": ["phenylethylamine"]
+	},
+	"benzylpiperazine": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["piperazine"]
+	},
+	"yerba mate": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["plant"],
+		"ingredients": ["polyphenols", "caffeine", "theobromine"]
+	},
+
+	"caffeine": {
+		"effects": ["stimulant"]
+	},
+	"GABA": {
+		"class": ["neurotransmitter"],
+		"effects": ["sedative"]
+	},
+	"theobromine": {
+		"class": ["methylxanthine"],
+		"effects": ["stimulant"]
+	},
+	"green tea": {
+		"class": ["stimulant"],
+		"effects": ["stimulant"]
+	},
+	"nutmeg": {
+		"effects": ["psychedelic"],
+		"ingredients": ["myristicin"],
+		"class": ["plant"]
+	},
+	"poppy": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+
+	"tansy": {
+		"class": ["plant"],
+		"effects": ["cathartic"]
+	},
+
+	"nymphaea caerulea": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["apomorphine"]
+	},
+
+	"5-methoxytryptamine": {
+		"effects": ["unknown"],
+		"class": ["tryptamine"]
+	},
+	"5-meo-amt": {
+		"effects": ["unknown"],
+		"class": ["tryptamine"]
+	},
+	"det": {
+		"effects": ["unknown"],
+		"class": ["tryptamine"]
+	},
+	"5-mapb": {
+		"effects": ["unknown"],
+		"class": ["amphetamine"]
+	},
+	"escaline": {
+		"effects": ["unknown"],
+		"class": ["phenylethylamine"]
+	},
+	"mulberry": {
+		"effects": ["unknown"],
+		"class": ["piperidine"],
+		"ingredients": ["sanguinarine", "berberines"]
+	},
+
+	"4-acetoxy-mipt": {
+		"effects": ["psychedelic"],
+		"class": ["tryptamine"]
+	},
+
+	"4-ho-mipt": {
+		"effects": ["psychedelic"],
+		"class": ["tryptamine"]
+	},
+	"morning glory": {
+		"effects": ["psychedelic"]
+	},
+	"lorcaserin": {
+		"effects": ["stimulant", "anorectic"]
+	},
+
+	"phalaris": {
+		"effects": ["psychedelic"],
+		"ingredients": ["DMT", "5-MeO-DMT", "5-OH-DMT"]
+	},
+	"argyreia nervosa": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["glycosides", "ergolines", "hydroxycinnamic"]
+	},
+	"glucosamine": {
+		"effects": ["joint support"],
+		"class": ["supplement"]
+	},
+	"piperazine": {
+		"class": ["piperazine"],
+		"effects": ["stimulant", "hallucinogen"]
+	},
+	"mugwort": {
+		"effects": ["anxiolytic"],
+		"class": ["plant"]
+	},
+	"woodrose": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["plant"]
+	},
+	"armodafinil": {
+		"class":["stimulant"],
+		"effects": ["stimulant"]
+	},
+	"adrafinil": {
+		"class":["stimulant"],
+		"effects": ["stimulant"]
+	},
+	"trazodone": {
+		"effects": ["antidepressant"],
+		"class": ["piperazine"]
+	},
+	"xyrem": {
+		"effects": ["stimulant"],
+		"class": ["GHB analogue"]
+	},
+	"modafinil": {
+		"effects": ["stimulant"]
+	},
+	"amitriptyline": {
+		"effects": ["antidepressant"],
+		"class": ["tca"]
+	},
+	"salvia": {
+		"effects": ["hallucinogen"],
+		"class": ["diterpenoid"],
+		"ingredients": ["salvinorin A"]
+	},
+	"sertraline": {
+		"effects": ["antidepressant", "stimulant"]
+	},
+	"lobelia": {
+		"effects": ["stimulant"],
+		"class": ["nicotinic agonist"]
+	},
+	"peyote": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"ingredients": ["mescaline"],
+		"class": ["plant"]
+	},
+	"stanozolol": {
+		"effects": ["hyperplasia"],
+		"class": ["anabolic steroid"]
+	},
+	"5-meo-mipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"5-meo-dipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"phosphatidylserine": {
+		"effects": ["unknown"],
+		"class": ["supplement"]
+	},
+	"l.virosa": {
+		"effects": ["sedative"],
+		"ingredients": ["NMPEA","lactucin","lactucopicrin"]
+	},
+	"flunitrazepam": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"diclazepam": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"phenazepam": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"benzodiazepine": {
+		"effects": ["sedative", "euphoria"]
+	},
+	"temazepam": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"clorazepate": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"oxazepam": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["benzodiazepine"]
+	},
+	"venlafaxine": {
+		"effects": ["stimulant", "antidepressant"],
+		"class": ["snri"]
+	},
+	"turnera": {
+		"effects": ["anxiolytic"]
+	},
+	"levometamphetamine": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["amphetamine"]
+	},
+	"bod": {
+		"effects": ["psychedelic"]
+	},
+	"metaxolone": {
+		"effects": ["euphoria", "relaxant", "analgesic"]
+	},
+	"cyclobenzaprine": {
+		"effects": ["euphoria", "relaxant", "analgesic"]
+	},
+	"clonidine": {
+		"effects": ["sedative", "relaxant"]
+	},
+	"xylazine": {
+		"effects": ["euphoria", "relaxant", "analgesic"]
+	},
+	"guaifenesin": {
+		"effects": ["sedative", "anxiolytic", "antitussive"],
+		"class": ["NMDAR antagonist"]
+	},
+	"cannabinoid": {
+		"effects": ["anxiolytic"]
+	},
+	"acorus gramineus": {
+		"effects": ["unknown"]
+	},
+	"chaliponga": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["plant"],
+		"ingredients": ["dmt", "5-meo-dmt"]
+	},
+	"yohimbe": {
+		"effects": ["stimulant"],
+		"ingredients": ["indoles"]
+	},
+	"1p-lsd": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["lysergamide"]
+	},
+	"lsd": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["lysergamide"]
+	},
+	"lsz": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["lysergamide"]
+	},
+	"lsa": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["lysergamide"]
+	},
+	"eth-lad": {
+		"effects": ["hallucinogen"],
+		"ingredients": ["lysergamide"]
+	},
+	"pyrazolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"midazolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"etizolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"clonazepam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"diazepam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"alprazolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"lorazepam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"flubromazolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"ginkgo biloba": {
+		"effects": ["nootropic"],
+		"ingredients": ["phenolic acids",
+			"proanthocyanidins", "myricetin", "kaempferol", "isorhamnetin",
+			"quercetin", "ginkgolides", "bilobalides"
+		]
+	},
+	"heimia salicifolia": {
+		"effects": ["unknown"]
+	},
+	"ergoloid": {
+		"effects": ["nootropic"],
+		"class": ["ergot"]
+	},
+	"4-acetoxy-dipt": {
+		"effects": ["psychedelic"],
+		"class": ["tryptamine"]
+	},
+	"4-oh-det": {
+		"effects": ["psychedelic"],
+		"class": ["tryptamine"]
+	},
+	"4-ho-dipt": {
+		"effects": ["psychedelic"],
+		"class": ["tryptamine"]
+	},
+	"phenazapam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"clonazolam": {
+		"effects": ["sedative"],
+		"class": ["benzodiazepine"]
+	},
+	"tobacco": {
+		"effects": ["stimulant"]
+	},
+	"levamisole": {
+		"effects": ["antidepressant"],
+		"class": ["imidazothiazole"]
+	},
+	"ethylphenidate": {
+		"effects": ["stimulant"]
+	},
+	"acetaminophen": {
+		"effects": ["analgesic"],
+		"class": ["salicylate"]
+	},
+	"ibuprofen": {
+		"effects": ["analgesic"]
+	},
+	"methoxetamine": {
+		"effects": ["dissociative"],
+		"class": ["NMDAR antagonist", "sri"]
+	},
+	"phenelzine": {
+		"effects": ["stimulant", "maoi"],
+		"class": ["maoi"]
+	},
+	"toluene": {
+		"effects": ["stimulant"],
+		"class": ["inhalant"]
+	},
+	"halothane": {
+		"effects": ["stimulant"],
+		"class": ["inhalant"]
+	},
+	"ethyl ether": {
+		"effects": ["stimulant"],
+		"class": ["inhalant"]
+	},
+	"aniracetam": {
+		"effects": ["nootropic"],
+		"class": ["racetam", "ampakine"]
+	},
+	"mentha pulegium": {
+		"effects": ["emmenagogue"],
+		"class": ["plant"]
+	},
+	"buphedrone": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["cathinone", "amphetamine"]
+	},
+	"calea": {
+		"effects": ["hallucinogen"],
+		"class": ["plant"]
+	},
+	"piper methysticum": {
+		"effects": ["anxiolytic"],
+		"class": ["plant"],
+		"ingredients": ["kavalactones"]
+	},
+	"aripiprazole": {
+		"effects": ["antipsychotic", "antidepressant"]
+	},
+	"5-apb": {
+		"effects": ["euphoria"],
+		"class": ["benzofuran"]
+	},
+	"milk thistle": {
+		"ingredients": ["silymarin"],
+		"effects": ["liver function"]
+	},
+	"thujone": {
+		"effects": ["psychedelic"]
+	},
+	"buprenorphine": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"methadone": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"nelumbo": {
+		"effects": ["unknown"]
+	},
+	"wild yam": {
+		"effects": ["unknown"],
+		"class": ["plant"]
+	},
+	"phenibut": {
+		"effects": ["anxiolytic"],
+		"class": ["GABA analogue"]
+	},
+	"naloxone": {
+		"effects": ["stimulant"],
+		"class": ["opioid antagonist"]
+	},
+	"naltrexone": {
+		"effects": ["stimulant"],
+		"class": ["opioid antagonist"]
+	},
+	"bupropion": {
+		"effects": ["stimulant", "antidepressant"],
+		"class": ["ndri"]
+	},
+	"tyrosine": {
+		"effects": ["unknown"]
+	},
+	"theanine": {
+		"effects": ["unknown"]
+	},
+	"gabob": {
+		"effects": ["antiepileptic"],
+		"class": ["GABA analogue"]
+	},
+	"mpa": {
+		"effects": ["stimulant"],
+		"class": ["amphetamine"]
+	},
+	"methaqualone": {
+		"effects": ["sedative"],
+		"class": ["quinazolinone"]
+	},
+	"methylmethaqualone": {
+		"effects": ["sedative"],
+		"class": ["quinazolinone"]
+	},
+	"aconitum": {
+		"effects": ["stimulant"],
+		"class": ["acetylcholinesterase inhibitor"],
+		"ingredients": ["pseudaconitine"]
+	},
+	"clozapine": {
+		"effects": ["antipsychotic"]
+	},
+	"meclofenoxate": {
+		"effects": ["nootropic"],
+		"class": ["cholinergic"]
+	},
+	"meclizine": {
+		"effects": ["antihistamine", "antiemetic"]
+	},
+	"chlorpheniramine": {
+		"effects": ["antihistamine", "antiemetic"]
+	},
+	"diphenhydramine": {
+		"effects": ["antihistamine", "antiemetic"]
+	},
+	"nbome": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"6-apb": {
+		"effects": ["psychedelic", "hallucinogen", "entactogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-i": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-b": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-b-fly": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2-ct-2": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2-ct-21": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2c-c": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"2ct-2": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"3c-p": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"3c-e": {
+		"effects": ["stimulant", "psychedelic"],
+		"class": ["amphetamine"]
+	},
+	"duloxetine": {
+		"effects": ["antidepressant"]
+	},
+	"paroxetine": {
+		"effects": ["antidepressant"]
+	},
+	"fluoxetine": {
+		"effects": ["antidepressant"]
+	},
+	"reboxetine": {
+		"effects": ["antidepressant"]
+	},
+	"dihydrocodeine": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+	"oxycodone": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+	"codeine": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+	"carbidopa": {
+		"effects": ["support", "maoi"],
+		"class": ["maoi"]
+	},
+	"tramadol": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+	"chocolate": {
+		"effects": ["unknown"],
+		"class": ["food"]
+	},
+	"passion flower": {
+		"effects": ["anxiolytic"],
+		"class": ["plant"]
+	},
+	"mirtazapine": {
+		"effects": ["antidepressant"],
+		"class": ["NaSSA"]
+	},
+	"phentermine": {
+		"effects": ["stimulant"],
+		"class": ["amphetamine"]
+	},
+	"pmma": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["amphetamine"]
+	},
+	"dopr": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["phenylethylamine"]
+	},
+	"catuaba": {
+		"effects": ["stimulant"],
+		"class": ["plant"]
+	},
+	"mmda": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["amphetamine"]
+	},
+	"difluoroethane": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+	"chloroethane": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+	"chlorodifluoromethane": {
+		"effects": ["euphoria"],
+		"class": ["inhalant"]
+	},
+	"dimenhydrinate": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["antihistamine"]
+	},
+	"doxylamine": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["antihistamine"]
+	},
+	"loratadine": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["antihistamine"]
+	},
+	"triprolidine": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["antihistamine"]
+	},
+	"yarrow": {
+		"effects": ["stimulant"],
+		"ingredients": ["isovaleric acid", "salicylic acid", "asparagin",
+			"sterols", "flavonoids", "tannins", "coumarins"
+		]
+	},
+	"lisdexamphetamine": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["amphetamine"]
+	},
+	"dextroamphetamine": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["amphetamine"]
+	},
+	"levomethamphetamine": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["amphetamine"]
+	},
+	"amphetamine": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["amphetamine"]
+	},
+	"ethanol": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["amphetamine"]
+	},
+	"dexmethylphenidate": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["amphetamine"]
+	},
+	"5meo-dipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"chaliponga": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"iap": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"5-meo-amt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"4-aco-dipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"skullcap": {
+		"effects": ["anxiolytic"],
+		"class": ["plant"]
+	},
+	"mdpr": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["amphetamine"]
+	},
+	"glaucine": {
+		"effects": ["stimulant", "pde4 inhibitor"],
+		"class": ["plant", "pde4 inhibitor"]
+	},
+	"atomoxetine": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["nri"]
+	},
+	"oxybate": {
+		"effects": ["stimulant", "nootropic"],
+		"class": ["nri"]
+	},
+	"pentobarbital": {
+		"effects": ["sedative"],
+		"class": ["barbiturates"]
+	},
+	"nicotine": {
+		"effects": ["stimulant"]
+	},
+
+	"secobarbital": {
+		"effects": ["sedative"],
+		"class": ["barbiturates"]
+	},
+	"barbiturate": {
+		"effects": ["sedative", "euphoria"]
+	},
+	"butalbital": {
+		"effects": ["sedative"],
+		"class": ["barbiturates"]
+	},
+	"magnesium": {
+		"effects": ["sedative"],
+		"class": ["supplement", "mineral"]
+	},
+	"gvl": {
+		"effects": ["sedative"]
+	},
+	"ghb": {
+		"effects": ["sedative"]
+	},
+	"ghv": {
+		"effects": ["sedative"]
+	},
+	"melatonin": {
+		"effects": ["sedative"],
+		"class": ["neurotransmitter"]
+	},
+	"valproate": {
+		"effects": ["mood stabilizer", "antiepileptic"]
+	},
+	"glycyrrhizin": {
+		"effects": ["liver function"],
+		"class": ["plant"]
+	},
+	"c.roseus": {
+		"effects": ["nootropic"],
+		"class": ["plant"]
+	},
+	"mdpv": {
+		"effects": ["stimulant", "euphoria", "nootropic"],
+		"class": ["substituted pyrovalerone"]
+	},
+	"hydrocodone": {
+		"effects": ["euphoria", "analgesic"],
+		"class": ["opioid"]
+	},
+	"zolpidem": {
+		"effects": ["sedative"],
+		"class": ["imidazopyridine"]
+	},
+	"brunfelsia": {
+		"effects": ["stimulant"],
+		"class": ["plant"]
+	},
+	"promethazine": {
+		"effects": ["antiemetic", "sedative", "antihistamine"],
+		"class": ["phenothiazine"]
+	},
+	"14-butanediol": {
+		"effects": ["sedative"],
+		"class": ["pre-THF"]
+	},
+	"hydroxyzine": {
+		"effects": ["antiemetic", "sedative", "antihistamine"],
+		"class": ["phenothiazine"]
+	},
+	"ketamine": {
+		"effects": ["dissociative"],
+		"class": ["NMDAR antagonist"]
+	},
+	"guarana": {
+		"effects": ["stimulant"]
+	},
+	"ephedrine": {
+		"effects": ["stimulant"],
+		"class": ["phenylethylamine"]
+	},
+	"albuterol": {
+		"effects": ["stimulant"],
+		"class": ["phenylethylamine"]
+	},
+	"cacao": {
+		"effects": ["stimulant"]
+	},
+	"pfpp": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["piperazine"]
+	},
+	"4-mmc": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["amphetamine", "cathinone"]
+	},
+	"4-mmc": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["amphetamine"]
+	},
+	"4-methoxymethcathinone": {
+		"effects": ["stimulant", "euphoria"],
+		"class": ["amphetamine", "cathinone"]
+	},
+	"hypericum": {
+		"effects": ["antidepressant"],
+		"class": ["maoi", "plant"],
+		"ingredients": ["hyperforin", "amentoflavone"]
+	},
+	"t.terscheckii": {
+		"effects": ["unknown"]
+	},
+	"escitalopram": {
+		"effects": ["antidepressant"],
+		"class": ["ssri"]
+	},
+	"citalopram": {
+		"effects": ["antidepressant"],
+		"class": ["ssri"]
+	},
+	"ergoloid": {
+		"effects": ["nootropic"],
+		"class": ["ergot"],
+		"ingredients": ["dihydroergocristine", "dihydroergocornine", "alpha-dihydroergocryptine",
+			"beta-dihydroergocryptine"
+		]
+	},
+
+	"anadenanthera": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["amphetamine"]
+	},
+
+	"pedicularis": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["plant"]
+	},
+
+	"pramipexole": {
+		"effects": ["nootropic"]
+	},
+
+	"4-fluoroamphetamine": {
+		"effects": ["psychedelic", "hallucinogen", "entactogen"],
+		"class": ["amphetamine"]
+	},
+
+	"calcium": {
+		"effects": ["unknown"]
+	},
+	"nabilone": {
+		"effects": ["antiemetic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"mescaline": {
+		"effects": ["hallucinogen", "psychedelic"]
+	},
+	"hyoscine": {
+		"effects": ["sedative"]
+	},
+	"choline": {
+		"effects": ["unknown"],
+		"class": ["supplement"]
+	},
+	"methamphetamine": {
+		"effects": ["stimulant"]
+	},
+	"methylphenidate": {
+		"effects": ["stimulant"]
+	},
+	"lagochilus inebrians": {
+		"effects": ["unknown"]
+	},
+	"risperidone": {
+		"effects": ["antipsychotic"]
+	},
+	"quetiapine": {
+		"effects": ["antipsychotic"]
+	},
+	"nefazodone": {
+		"effects": ["antidepressant"]
+	},
+	"chamomile": {
+		"effects": ["sedative", "anxiolytic"]
+	},
+	"ginseng": {
+		"effects": ["stimulant", "nootropic"]
+	},
+	"alpha-pvp": {
+		"effects": ["stimulant"],
+		"class": ["cathinone"]
+	},
+	"alpha-php": {
+		"effects": ["stimulant"],
+		"class": ["cathinone"]
+	},
+	"pregabalin": {
+		"effects": ["analgesic", "anxiolytic"]
+	},
+	"pseudoephedrine": {
+		"effects": ["stimulant"]
+	},
+	"amanita": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["mushroom"],
+		"ingredients": ["muscimol", "ibotenic acid"]
+	},
+	"am-2201": {
+		"effects": ["anxiolytic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"xlr-11": {
+		"effects": ["anxiolytic"],
+		"class": ["synthetic cannabinoid"]
+	},
+	"sildenafil": {
+		"effects": ["pde5 inhibitor"]
+	},
+	"19-norandrostenedione": {
+		"effects": ["anabolic steroid"]
+	},
+	"capsaicin": {
+		"effects": ["unknown"]
+	},
+	"hyoscyamine": {
+		"effects": ["stimulant"],
+		"class": ["muscarinic antagonist"]
+	},
+	"methcathinone": {
+		"class": ["cathinone"],
+		"effects": ["stimulant", "euphoria"]
+	},
+	"methedrone": {
+		"class": ["cathinone"],
+		"effects": ["stimulant", "euphoria"]
+	},
+	"3-fpm": {
+		"effects": ["stimulant"],
+		"class": ["phenylmorpholine",
+			"amphetamine"
+		]
+	},
+	"san pedro": {
+		"effects": ["hallucinogen", "psychedelic"],
+		"class": ["cactus"]
+	},
+	"t.bridgesii": {
+		"effects": ["hallucinogen", "psychedelic"],
+		"class": ["cactus"]
+	},
+	"t.peruvianus": {
+		"effects": ["hallucinogen", "psychedelic"],
+		"class": ["cactus"]
+	},
+	"tianeptine": {
+		"effects": ["anxiolytic", "antidepressant"],
+		"class": ["tca"]
+	},
+	"l-glutamine": {
+		"class": ["neurotransmitter"],
+		"effects": ["unknown"]
+	},
+	"bearberry": {
+		"effects": ["unknown"]
+	},
+	"meta-chlorophenylpiperazine": {
+		"effects": ["stimulant"],
+		"class": ["phenylpiperazeine"]
+	},
+	"galantamine": {
+		"effects": ["nootropic", "stimulant"]
+	},
+	"mitragyna speciosa": {
+		"effects": ["analgesic", "euphoria"]
+	},
+	"propanolol": {
+		"effects": ["antihypertensive", "anxiolytic"]
+	},
+	"atenolol": {
+		"effects": ["antihypertensive", "anxiolytic"]
+	},
+	"beta-blocker": {
+		"effects": ["antihypertensive", "anxiolytic"]
+	},
+	"metoprolol": {
+		"effects": ["antihypertensive", "anxiolytic"]
+	},
+	"pyrovalerone": {
+		"effects": ["stimulant"],
+		"class": ["cathinone"]
+	},
+	"propylhexedrine": {
+		"effects": ["stimulant", "decongestant"],
+		"class": ["amphetamine"]
+	},
+	"butabital": {
+		"effects": ["sedative", "euphoria"],
+		"class": ["barbiturates"]
+	},
+	"ibogaine": {
+		"effects": ["psychedelic", "dissociative"],
+		"class": ["plant"]
+	},
+	"dipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"mipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"4-meo-mipt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"leonotis leonurus": {
+		"effects": ["anxiolytic", "hypoglycemic"],
+		"class": ["plant"]
+	},
+	"brugmansia suaveolens": {
+		"effects": ["psychedelic", "entheogen"],
+		"class": ["plant"]
+	},
+	"dmt": {
+		"effects": ["psychedelic", "entheogen"],
+		"part of": ["ayahuasca"],
+		"class": ["tryptamine"]
+	},
+	"dimethocaine": {
+		"effects": ["stimulant", "anesthetic"]
+	},
+	"4-acetoxy-det": {
+		"effects": ["psychedelic", "entheogen"],
+		"part of": ["ayahuasca"],
+		"class": ["tryptamine"]
+	},
+	"ayahuasca": {
+		"effects": ["hallucinogen", "psychedelic"],
+		"ingredients": ["harmaline"]
+	},
+	"dmea": {
+		"effects": ["tryptamine"]
+	},
+	"am-dipt": {
+		"class":["phenylethylamine"],
+		"effects": ["unknown"]
+	},
+	"mullein": {
+		"class":["plant"],
+		"effects": ["unknown"]
+	},
+	"gotu kola": {
+		"class":["plant"],
+		"effects": ["unknown"]
+	},
+	"heroin": {
+		"effects": ["euphoria", "sedative", "relaxant"],
+		"class": ["opioid"]
+	},
+	"ssris": {
+		"effects": ["antidepressant"]
+	},
+	"mimosa": {
+		"effects": ["psychedelic", "hallucinogen", "entheogen"],
+		"class": ["plant"],
+		"ingredients": ["dmt"]
+	},
+	"maoi": {
+		"effects": ["maoi", "antidepressant"],
+		"class": ["maoi"]
+	},
+	"fenfluramine": {
+		"effects": ["stimulant", "maoi"],
+		"class": ["maoi"]
+	},
+	"bufotenin": {
+		"effects": ["psychedelic", "hallucinogen"]
+	},
+	"theophylline": {
+		"effects": ["stimulant", "euphoria"]
+	},
+	"lactua": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["plant"]
+	},
+	"harmaline": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["beta-carbolines"]
+	},
+	"dxo": {
+		"effects": ["antitussive", "euphoria"],
+		"class": ["morphinan"]
+	},
+	"dextropropoxyphene": {
+		"effects": ["antitussive", "euphoria"],
+		"class": ["morphinan"]
+	},
+	"dxm": {
+		"effects": ["antitussive", "euphoria"],
+		"class": ["morphinan"]
+	},
+	"ah-7921": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"naphyrone": {
+		"effects": ["stimulant"],
+		"class": ["nri", "sri", "dri"]
+	},
+	"diphenidine": {
+		"effects": ["dissociative"],
+		"class": ["diarylethylamines"]
+	},
+	"5-meo-dalt": {
+		"effects": ["psychedelic", "hallucinogen"],
+		"class": ["tryptamine"]
+	},
+	"2c-tfm": {
+		"effects": ["psychedelic", "entheogen"],
+		"class": ["phenylethylamine"]
+	},
+	"methallylescaline": {
+		"effects": ["psychedelic", "entheogen"],
+		"class": ["phenylethylamine"]
+	},
+	"allylescaline": {
+		"effects": ["psychedelic", "entheogen"],
+		"class": ["phenylethylamine"]
+	},
+	"hydromorphone": {
+		"effects": ["analgesic", "euphoria"],
+		"class": ["opioid"]
+	},
+	"cocaine": {
+		"effects": ["stimulant", "euphoria"]
+	},
+	"doi": {
+		"effects": ["stimulant", "psychedelic"],
+		"class": ["amphetamine"]
+	},
+	"dhea": {
+		"effects": ["unknown"],
+		"class": ["supplement"]
+	},
+	"pcp": {
+		"effects": ["stimulant", "psychedelic"]
+	},
+	"propylhexedrine": {
+		"effects": ["stimulant"]
+	},
+	"funky monkey": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"mollys plant food": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"spike99": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"diamond spirit": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"spice diamond": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"jwh-018": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"pineapple spice": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"kush": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"bombay blue": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"mdmb-chmica": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"copelandia cyanescens": {
+		"effects": ["psychedelic"],
+		"class": ["mushroom"]
+	},
+	"smiley dog": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"cp55-940": {
+		"effects": ["stimulant", "anxiolytic"],
+		"effects": ["synthetic cannabinoid"]
+	},
+	"vasopressin": {
+		"effects": ["euphoria"]
+	},
+	"pma": {
+		"effects": ["antidepressant"],
+		"class": ["amphetamine"]
+	},
+	"dizocilpine": {
+		"effects": ["stimulant", "dissociative"],
+		"class": ["nmda antagonist"]
+	},
+	"mdoh": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["amphetamine"]
+	},
+	"dob": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"holy basil": {
+		"effects": ["sedative", "anxiolytic"],
+		"class": ["plant"]
+	},
+	"5-meo-dmt": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"amt": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"4-aco-dmt": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"4-ho-dmt": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"citicholine": {
+		"effects": ["nootropic"]
+	},
+	"grapefruit": {
+		"effects": ["liver support"],
+		"class": ["food"]
+	},
+	"bdb": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["phenylethylamine"]
+	},
+	"cerebrolysin": {
+		"effects": ["unknown"],
+		"class": ["polypeptide mixture"]
+	},
+	"aet": {
+		"effects": ["stimulant", "psychedelic", "entactogen"],
+		"class": ["tryptamine"]
+	},
+	"pyridoxine": {
+		"effects": ["unknown"],
+		"class": ["supplement"]
+	},
+	"niacin": {
+		"effects": ["unknown"],
+		"class": ["supplement"]
+	},
+	"black mamba": {
+		"effects": ["poison"],
+		"class": ["venom"]
+	},
+	"carisoprodol": {
+		"effects": ["sedative"],
+		"class": ["barbiturates"]
+	},
+	"baclofen": {
+		"effects": ["anxiolytic", "relaxant"]
+	},
+	"methocarbamol": {
+		"effects": ["anxiolytic", "relaxant"]
+	},
+	"cyclizine": {
+		"effects": ["antihistamine", "antiemetic"],
+		"class": ["piperazine"]
+	},
+	"phenytoin": {
+		"effects": ["antiepileptic"]
+	},
+	"clenbuterol": {
+		"effects": ["stimulant"],
+		"class": ["beta agonist"]
+	},
+	"synephrine": {
+		"effects": ["stimulant"],
+		"class": ["beta agonist"]
+	},
+	"lamotrigine": {
+		"effects": ["antiepileptic"]
+	},
+	"etaqualone": {
+		"effects": ["sedative"],
+		"class": ["quinazolinone"]
+	},
+	"piperazine": {
+		"effects": ["stimulant", "antidepressant", "euphoria"]
+	},
+	"bk-mdma": {
+		"effects": ["psychedelic", "entactogen", "hallucinogen"],
+		"class": ["phenethylamine", "amphetamine", "cathinone"]
+	},
+	"bk-mdpa": {
+		"effects": ["psychedelic", "entactogen", "hallucinogen"],
+		"class": ["phenethylamine", "amphetamine", "cathinone"]
+	},
+	"mdmb-chminaca": {
+		"effects": ["euphoria", "anxiolytic"],
+		"class": ["indoles", "synthetic cannabinoid"]
+	}
+}
