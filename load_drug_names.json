@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet 1","startColumn":"A","endColumn":"A","startRow":"2","endRow":"448","comment":"","rule":"Class: @A*(mm:SkipIfOWLEntityExists)\nSubClassOf: substance","active":true}]}

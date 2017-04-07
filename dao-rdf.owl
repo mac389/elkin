@@ -1,0 +1,4038 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://knoesis.org/ontology/predose#"
+     xml:base="http://knoesis.org/ontology/predose"
+     xmlns:drugbank="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/"
+     xmlns:predose="http://knoesis.org/ontology/predose#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:m2="http://rdf.freebase.com/ns/m/03"
+     xmlns:m3="http://rdf.freebase.com/ns/m/058"
+     xmlns:m4="http://rdf.freebase.com/ns/m/01"
+     xmlns:freebase="http://rdf.freebase.com/ns/m/"
+     xmlns:m5="http://rdf.freebase.com/ns/m/05"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:m6="http://rdf.freebase.com/ns/m/011"
+     xmlns:dbpedia="http://dbpedia.org/resource/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:m="http://rdf.freebase.com/ns/m/055"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:opencyc="http://sw.opencyc.org/concept/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://knoesis.org/ontology/predose"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#NEG_ADMINISTERED_TO -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#NEG_ADMINISTERED_TO">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#NEG_AFFECTS -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#NEG_AFFECTS">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#administered_to -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#administered_to">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#affects -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#affects">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#associated_with -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#associated_with">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#augments -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#augments">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#carries_out -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#carries_out">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#causes -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#causes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#coexists_with -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#coexists_with">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#complicates -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#complicates">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#contains -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#contains">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#converts_to -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#converts_to">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#diagnoses -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#diagnoses">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#disrupts -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#disrupts">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#drug_type -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#drug_type">
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#exhibits -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#exhibits">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#got_from_a_source -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#got_from_a_source">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_amount -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_amount">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_drug -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_drug">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#User_drug_source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_preparation_method -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_preparation_method">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_price -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_price">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_source -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#User_drug_source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_unit -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_unit">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Dose"/>
+                    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Frequency"/>
+                    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Price"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_usage_method -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_usage_method">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_usage_reason -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#has_usage_reason">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#User_drug_usage"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#indicates -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#indicates">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#inhibits -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#inhibits">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Place"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#interacts_with -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#interacts_with">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#is_treated_with -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#is_treated_with">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#manifestation_of -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#manifestation_of">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Source"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#measures -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#measures">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#method_of -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#method_of">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#usage_source -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#usage_source">
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#User_drug_source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#uses -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#uses">
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#with_frequency -->
+
+    <owl:ObjectProperty rdf:about="http://knoesis.org/ontology/predose#with_frequency">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#User_drug_usage"/>
+        <rdfs:range rdf:resource="http://knoesis.org/ontology/predose#Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_slang_term -->
+
+    <owl:DatatypeProperty rdf:about="http://knoesis.org/ontology/predose#has_slang_term">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>Rectal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://knoesis.org/ontology/predose#has_value">
+        <rdfs:domain rdf:resource="http://knoesis.org/ontology/predose#Dose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Acute_Effects -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Acute_Effects">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Addiction -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Addiction">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Alcohol -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Alcohol">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Amphetamine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Amphetamine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Stimulant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Amphetamine_like_drugs -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Amphetamine_like_drugs">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Stimulant"/>
+        <rdfs:label>Amphetamine like drugs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Antihistamines -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Antihistamines">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Antihistamine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Barbiturates -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Barbiturates">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Sedative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Bath_salts -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Bath_salts">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Amphetamine_like_drugs"/>
+        <rdfs:label>Bath salts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Benzodiazepine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Benzodiazepine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Sedative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Buprenorphine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine_analgesic -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_analgesic">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cannabinoids -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Cannabinoids">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Cannabinoids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cardiovascular_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Cardiovascular_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Cardiovascular Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cimetidine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Cimetidine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Antihistamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Citrus -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Citrus">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Nutritional_Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cocaine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Cocaine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Stimulant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dermatological_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Dermatological_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Detoxification -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Detoxification">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug_Abuse_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Digestive_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Digestive_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Digestive Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Diphenhydramine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Diphenhydramine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Antihistamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dose -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Dose"/>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Drug -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Drug">
+        <rdfs:label>Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Drug_Abuse_Treatment -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Drug_Abuse_Treatment">
+        <rdfs:label>Drug_Abuse_Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Drug_Effects -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Drug_Effects">
+        <rdfs:label>Drug Effects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ear_Nose_Throat_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Ear_Nose_Throat_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Endocrinological_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Endocrinological_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Endocrinological_Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Family -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Family">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Fentanyl -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Fentanyl">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Frequency -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Frequency">
+        <rdfs:label>Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Friend -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Friend">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#GHB -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#GHB">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#GHB_Like_Drugs"/>
+        <rdfs:label>GHB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#GHB_Like_Drugs -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#GHB_Like_Drugs">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Sedative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hallucinogen -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Hallucinogen">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Hallucinogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Healthcare_Professional -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Healthcare_Professional">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Herbal_Sedative -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Herbal_Sedative">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Sedative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hydrocodone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Hydrocodone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hydromorphone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Hydromorphone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Infectious_Diseases -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Infectious_Diseases">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Loperamide -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Loperamide">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MDMA -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#MDMA">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Stimulant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Medical_conditions -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Medical_conditions">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug_Effects"/>
+        <rdfs:label>Medical Conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Mental_Health_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Mental_Health_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Mental Health Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methadone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Methadone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methamphetamine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Methamphetamine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Amphetamine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Morphine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Morphine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Musculoskeletal__Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Musculoskeletal__Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Musculoskeletal Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Naloxone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Naloxone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Naltrexone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Naltrexone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <rdfs:label>Naltrexone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Neurological_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Neurological_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Neurological Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Nutritional_Products -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Nutritional_Products">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Nutritional_Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Opioid -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Opioid">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Overdose -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Overdose">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycodone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Oxycodone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycodone_IR -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Oxycodone_IR">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Oxycodone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycontin -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Oxycontin">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Oxycodone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxymorphone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Oxymorphone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Pain -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Pain">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Person -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Phenybut -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Phenybut">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#GHB_Like_Drugs"/>
+        <rdfs:label>Phenybut</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Physical_Effects -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Physical_Effects">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Acute_Effects"/>
+        <rdfs:label>Physical Effects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Place -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Place">
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Preparation -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Preparation">
+        <rdfs:label>Preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Price -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Price">
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Psychoactive_Effects -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Psychoactive_Effects">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Acute_Effects"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Quinine -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Quinine">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Nutritional_Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Reproductive_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Reproductive_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Reproductive Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Respiratory_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Respiratory_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Respiratory Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Route_of_administration -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Route_of_administration">
+        <rdfs:label>Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Sedative -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Sedative">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <rdfs:label>Sedative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Source -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Source">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Person"/>
+                    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Stimulant -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Stimulant">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Suboxone -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Suboxone">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tramadol -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Tramadol">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Unit -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Unit"/>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Urinary_System_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Urinary_System_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <rdfs:label>Urinary System Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#User -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#User">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#User_drug_source -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#User_drug_source">
+        <rdfs:label>User drug source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#User_drug_usage -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#User_drug_usage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://knoesis.org/ontology/predose#uses"/>
+                <owl:someValuesFrom rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>User drug usage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Vision_Problems -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Vision_Problems">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Withdrawal -->
+
+    <owl:Class rdf:about="http://knoesis.org/ontology/predose#Withdrawal">
+        <rdfs:subClassOf rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Buprenorphine -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Buprenorphine">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Hydrocodone -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hydrocodone">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Hydromorphone -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hydromorphone">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Methadone -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Methadone">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Morphine -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Morphine">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Oxycodone -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Oxycodone">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Oxycodone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Oxymorphone -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Oxymorphone">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Oxymorphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tramadol">
+        <owl:sameAs rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#ADHD -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#ADHD">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Mental_Health_Problems"/>
+        <has_slang_term>Attention Deficit Hyperactivity Disorder</has_slang_term>
+        <rdfs:label>ADHD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Abdominal_Pain -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Abdominal_Pain">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Digestive_Problems"/>
+        <has_slang_term>Stomach pain</has_slang_term>
+        <rdfs:label>Abdominal Pain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Actiq -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Actiq">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Fentanyl"/>
+        <rdfs:label>Actiq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Adanon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Adanon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Adanon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Addiction -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Addiction">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <has_slang_term>Addict</has_slang_term>
+        <has_slang_term>Addicted</has_slang_term>
+        <has_slang_term>Dependent</has_slang_term>
+        <has_slang_term>Hooked</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Addnok -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Addnok">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend"/>
+        <rdfs:label>Addnok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Algidon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Algidon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Algidon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Algovetin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Algovetin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Algovetin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Alprazolam -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Alprazolam">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Benzodiazepine"/>
+        <has_slang_term>Xanax</has_slang_term>
+        <has_slang_term>Xanies</has_slang_term>
+        <rdfs:label>Alprazolam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Althose_hydrochloride -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Althose_hydrochloride">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Althose hydrochloride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Amphetamine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Amphetamine">
+        <has_slang_term>Adderall</has_slang_term>
+        <has_slang_term>Desoxyn</has_slang_term>
+        <has_slang_term>Dexedrin</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Anxiety -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Anxiety">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Mental_Health_Problems"/>
+        <has_slang_term>Anxious</has_slang_term>
+        <rdfs:label>Anxiety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Apokyn -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Apokyn">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Apokyn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Astramorph_PF -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Astramorph_PF">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Astramorph PF</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Avinza -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Avinza">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Avinza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Bag -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Bag">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <has_slang_term>bag</has_slang_term>
+        <rdfs:label>Bag</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Bekadid -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Bekadid">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Bekadid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Benzodiazepine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Benzodiazepine">
+        <has_slang_term>Benzo</has_slang_term>
+        <has_slang_term>Benzos</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Bottle -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Bottle">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:label>Bottle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Bronchitis -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Bronchitis">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Respiratory_Problems"/>
+        <rdfs:label>Bronchitis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprel -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprel">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Buprel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenex -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprenex">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Buprenex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprenorphine">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03brks"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00921"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/2476"/>
+        <has_slang_term>bup</has_slang_term>
+        <has_slang_term>bupe</has_slang_term>
+        <has_slang_term>bupes</has_slang_term>
+        <has_slang_term>bupey</has_slang_term>
+        <has_slang_term>buprenorphone</has_slang_term>
+        <has_slang_term>bups</has_slang_term>
+        <has_slang_term>sobos</has_slang_term>
+        <has_slang_term>subbies</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine_analgesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_analgesic">
+        <has_slang_term>low dose buprenorphine</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend">
+        <has_slang_term>high dose buprenorphine</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Buprigesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Buprigesic">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Buprigesic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Butrans -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Butrans">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Butrans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cimetidine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Cimetidine">
+        <has_slang_term>Tagamet</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Citrus -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Citrus">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Nutritional_Products"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Clonazepam -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Clonazepam">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Benzodiazepine"/>
+        <has_slang_term>Clonazepams</has_slang_term>
+        <has_slang_term>Clonipin</has_slang_term>
+        <has_slang_term>Klonipin</has_slang_term>
+        <has_slang_term>Klonipins</has_slang_term>
+        <has_slang_term>Klonopin</has_slang_term>
+        <has_slang_term>Klonopins</has_slang_term>
+        <has_slang_term>Klonpin</has_slang_term>
+        <has_slang_term>Klonpins</has_slang_term>
+        <has_slang_term>Kpin</has_slang_term>
+        <has_slang_term>Kpins</has_slang_term>
+        <rdfs:label>Clonazepam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cocaine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Cocaine">
+        <has_slang_term>girl</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Cocaine_hcl -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Cocaine_hcl">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cocaine"/>
+        <has_slang_term>blow</has_slang_term>
+        <has_slang_term>coke</has_slang_term>
+        <rdfs:label>Cocaine HCl</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Codeine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Codeine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <has_slang_term>Codiene</has_slang_term>
+        <has_slang_term>Tylenol 3</has_slang_term>
+        <has_slang_term>Tylenol with codeine</has_slang_term>
+        <rdfs:label>Codeine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Codinovo -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Codinovo">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Codinovo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Collapsed_Veins -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Collapsed_Veins">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cardiovascular_Problems"/>
+        <rdfs:label>Collapsed Veins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Combunox -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Combunox">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Combunox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Constipation -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Constipation">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Digestive_Problems"/>
+        <has_slang_term>Backed up</has_slang_term>
+        <has_slang_term>Constipated</has_slang_term>
+        <rdfs:label>Constipation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Crack -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Crack">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cocaine"/>
+        <has_slang_term>hard</has_slang_term>
+        <has_slang_term>rock</has_slang_term>
+        <rdfs:label>Crack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Crush -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Crush">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#DXM -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#DXM">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hallucinogen"/>
+        <has_slang_term>Coricidin</has_slang_term>
+        <has_slang_term>NyQuil</has_slang_term>
+        <has_slang_term>Robitussin</has_slang_term>
+        <has_slang_term>Robutussin</has_slang_term>
+        <has_slang_term>dextromethrophan</has_slang_term>
+        <rdfs:label>DXM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dealer -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dealer">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <rdfs:label>Dealer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Depodur -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Depodur">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Depodur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Depressed_Breathing -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Depressed_Breathing">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Shallow breathing</has_slang_term>
+        <has_slang_term>Slow and shallow breathing</has_slang_term>
+        <has_slang_term>Slow breathing</has_slang_term>
+        <has_slang_term>Slowed breathing</has_slang_term>
+        <rdfs:label>Depressed Breathing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Depression -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Depression">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Mental_Health_Problems"/>
+        <has_slang_term>Depressed</has_slang_term>
+        <has_slang_term>Depressive disorder</has_slang_term>
+        <rdfs:label>Depression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Depridol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Depridol">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Depridol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Detoxification -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Detoxification">
+        <has_slang_term>Detox</has_slang_term>
+        <has_slang_term>Detoxed</has_slang_term>
+        <has_slang_term>Detoxing</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#DiMo -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#DiMo">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>DiMo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Diarrhia -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Diarrhia">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Digestive_Problems"/>
+        <rdfs:label>Diarrhia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Diazepam -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Diazepam">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Benzodiazepine"/>
+        <has_slang_term>Valium</has_slang_term>
+        <has_slang_term>Valiums</has_slang_term>
+        <rdfs:label>Diazepam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dicodid -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dicodid">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Dicodid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dilaudid -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dilaudid">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <has_slang_term>D</has_slang_term>
+        <has_slang_term>D4s</has_slang_term>
+        <has_slang_term>Delantz</has_slang_term>
+        <has_slang_term>Delats</has_slang_term>
+        <has_slang_term>Delaud</has_slang_term>
+        <has_slang_term>Delida</has_slang_term>
+        <has_slang_term>Dilaudad</has_slang_term>
+        <has_slang_term>Dillies</has_slang_term>
+        <has_slang_term>Dills</has_slang_term>
+        <has_slang_term>Dilly</has_slang_term>
+        <has_slang_term>Diluadid</has_slang_term>
+        <has_slang_term>Ds</has_slang_term>
+        <rdfs:label>Dilaudid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dimorphone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dimorphone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Dimorphone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Diphenhydramine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Diphenhydramine">
+        <has_slang_term>Advil PM</has_slang_term>
+        <has_slang_term>Advill PM</has_slang_term>
+        <has_slang_term>Benadryl</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Diphydrone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Diphydrone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Diphydrone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dissolve -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dissolve">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dizziness">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Dizzy</has_slang_term>
+        <has_slang_term>Light headed</has_slang_term>
+        <has_slang_term>Lightheaded</has_slang_term>
+        <rdfs:label>Dizziness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dolohepton -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dolohepton">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Dolohepton</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dolophine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dolophine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Dolophine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dose -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dose">
+        <has_slang_term>Dosage</has_slang_term>
+        <has_slang_term>amount</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Drowsiness -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Drowsiness">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Drowsy</has_slang_term>
+        <has_slang_term>Sleep</has_slang_term>
+        <has_slang_term>Sleepy</has_slang_term>
+        <rdfs:label>Drowsiness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dry_Mouth -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dry_Mouth">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <rdfs:label>Dry mouth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Dulcontin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Dulcontin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Dulcontin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Duragesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Duragesic">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Fentanyl"/>
+        <rdfs:label>Duragesic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Duramorph_PF -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Duramorph_PF">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Duramorph PF</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Duromorph -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Duromorph">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Duromorph</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Endocet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Endocet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Endocet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Endodan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Endodan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Endodan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Energy -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Energy">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Energetic</has_slang_term>
+        <has_slang_term>Rush</has_slang_term>
+        <has_slang_term>Stimulated</has_slang_term>
+        <rdfs:label>Energy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Epimorph -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Epimorph">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Epimorph</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Euphoria -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Euphoria">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Bliss</has_slang_term>
+        <has_slang_term>Elation</has_slang_term>
+        <has_slang_term>Euphoric</has_slang_term>
+        <has_slang_term>Feeling of Happiness</has_slang_term>
+        <has_slang_term>Intense pleasure
+</has_slang_term>
+        <has_slang_term>Pleasure</has_slang_term>
+        <rdfs:label>Euphoria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Fainting -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Fainting">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Faint</has_slang_term>
+        <has_slang_term>Fainted</has_slang_term>
+        <rdfs:label>Fainting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Fenadone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Fenadone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Fenadone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Fentanest -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Fentanest">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Fentanyl"/>
+        <rdfs:label>Fentanest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Fentanyl -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Fentanyl">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/011w3r"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00813"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3345"/>
+        <has_slang_term>Fentanol</has_slang_term>
+        <has_slang_term>fent</has_slang_term>
+        <has_slang_term>fentanil</has_slang_term>
+        <has_slang_term>fentora</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Filter -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Filter">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Flunitrazepam -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Flunitrazepam">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Benzodiazepine"/>
+        <rdfs:label>Flunitrazepam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Freeze -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Freeze">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Friend -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Friend">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Gabapentin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Gabapentin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <has_slang_term>Neurontin</has_slang_term>
+        <rdfs:label>Gabapentin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Generic_Oxycontin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Generic_Oxycontin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycontin"/>
+        <has_slang_term>Teva 80</has_slang_term>
+        <has_slang_term>Teva oxy</has_slang_term>
+        <has_slang_term>generic oxy</has_slang_term>
+        <rdfs:label>Generic Oxycontin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Grapefruit_Juice -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Grapefruit_Juice">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Citrus"/>
+        <has_slang_term>GFJ</has_slang_term>
+        <has_slang_term>Grapefruit</has_slang_term>
+        <rdfs:label>Grapefruit_Juice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Grind -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Grind">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#HIV -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#HIV">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Infectious_Diseases"/>
+        <rdfs:label>HIV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hallucination -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hallucination">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Hallucinating</has_slang_term>
+        <has_slang_term>Hallucinations</has_slang_term>
+        <has_slang_term>Trip</has_slang_term>
+        <has_slang_term>Tripping</has_slang_term>
+        <rdfs:label>Hallucination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hashish -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hashish">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cannabinoids"/>
+        <has_slang_term>hash</has_slang_term>
+        <rdfs:label>Hashish</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Healthcare_professional -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Healthcare_professional">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <has_slang_term>Doc</has_slang_term>
+        <has_slang_term>Doctor</has_slang_term>
+        <has_slang_term>GP</has_slang_term>
+        <has_slang_term>Nurse</has_slang_term>
+        <rdfs:label>Healthcare professional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Heart_Attack -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Heart_Attack">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cardiovascular_Problems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Heat -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Heat">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Heptadon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Heptadon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Heptadon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Heptanon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Heptanon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Heptanon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Heroin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Heroin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03n5b"/>
+        <owl:sameAs rdf:resource="http://sw.opencyc.org/concept/Mx4rv-as85wpEbGdrcN5Y29ycA"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01452"/>
+        <has_slang_term>Chieba</has_slang_term>
+        <has_slang_term>Chieva</has_slang_term>
+        <has_slang_term>China white</has_slang_term>
+        <has_slang_term>Chiva</has_slang_term>
+        <has_slang_term>Diamorph</has_slang_term>
+        <has_slang_term>H</has_slang_term>
+        <has_slang_term>Horse</has_slang_term>
+        <has_slang_term>boi</has_slang_term>
+        <has_slang_term>boy</has_slang_term>
+        <has_slang_term>diacetylmorphine</has_slang_term>
+        <has_slang_term>diamorphine</has_slang_term>
+        <has_slang_term>diesel</has_slang_term>
+        <has_slang_term>dog food</has_slang_term>
+        <has_slang_term>dope</has_slang_term>
+        <has_slang_term>dope H</has_slang_term>
+        <has_slang_term>gear</has_slang_term>
+        <has_slang_term>heroin</has_slang_term>
+        <has_slang_term>junk</has_slang_term>
+        <has_slang_term>manteca</has_slang_term>
+        <has_slang_term>manteka</has_slang_term>
+        <has_slang_term>raw</has_slang_term>
+        <has_slang_term>smack</has_slang_term>
+        <has_slang_term>tan rock</has_slang_term>
+        <has_slang_term>tar</has_slang_term>
+        <rdfs:label>Heroin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hycodan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hycodan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Hycodan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hydrocodone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hydrocodone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03r3h"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00956"/>
+        <has_slang_term>Hydrocodones</has_slang_term>
+        <has_slang_term>Hydros</has_slang_term>
+        <has_slang_term>Watsons</has_slang_term>
+        <has_slang_term>hydro</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hydromorphone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hydromorphone">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01v2_g"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00327"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3648"/>
+        <has_slang_term>Hydromorph</has_slang_term>
+        <has_slang_term>Hydromorphine</has_slang_term>
+        <has_slang_term>hydroM</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Hymorphan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Hymorphan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Hymorphan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ibogaine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ibogaine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hallucinogen"/>
+        <has_slang_term>iboga</has_slang_term>
+        <rdfs:label>Ibogaine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ibudilast -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ibudilast">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <has_slang_term>MN-166</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Idromorfone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Idromorfone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Idromorfone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Increased_Body_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Increased_Body_Temperature">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <rdfs:label>Increased_Body_Temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Increased_Heart_Rate -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Increased_Heart_Rate">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Heart racing</has_slang_term>
+        <rdfs:label>Increased heart rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Injection -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Injection">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>IV</has_slang_term>
+        <has_slang_term>IVed</has_slang_term>
+        <has_slang_term>inject</has_slang_term>
+        <has_slang_term>injected</has_slang_term>
+        <has_slang_term>shoot</has_slang_term>
+        <has_slang_term>shot</has_slang_term>
+        <rdfs:label>Injection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Intranasal -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Intranasal">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>blow</has_slang_term>
+        <has_slang_term>insulfate</has_slang_term>
+        <has_slang_term>sniff</has_slang_term>
+        <has_slang_term>snort</has_slang_term>
+        <rdfs:label>Intranasal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Itching -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Itching">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Itch</has_slang_term>
+        <rdfs:label>Itching</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Kadian -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Kadian">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Kadian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ketalgin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ketalgin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Ketalgin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Kratom -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Kratom">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <has_slang_term>UEI</has_slang_term>
+        <rdfs:label>Kratom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#LSD -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#LSD">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hallucinogen"/>
+        <has_slang_term>acid</has_slang_term>
+        <rdfs:label>LSD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Laudacon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Laudacon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Laudacon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Laudicon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Laudicon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Laudicon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Liver_damage -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Liver_damage">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Digestive_Problems"/>
+        <rdfs:label>Liver damage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Loperamide -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Loperamide">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01qydv"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00836"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3954"/>
+        <has_slang_term>Ammodium</has_slang_term>
+        <has_slang_term>Diamode</has_slang_term>
+        <has_slang_term>Diar-Aid</has_slang_term>
+        <has_slang_term>Diarr-Eze</has_slang_term>
+        <has_slang_term>Immodium</has_slang_term>
+        <has_slang_term>Imodium</has_slang_term>
+        <has_slang_term>Imotil</has_slang_term>
+        <has_slang_term>K-Pek II</has_slang_term>
+        <has_slang_term>Kao-Paverin</has_slang_term>
+        <has_slang_term>Kaopectate II</has_slang_term>
+        <has_slang_term>Lop</has_slang_term>
+        <has_slang_term>Lope</has_slang_term>
+        <has_slang_term>Loperacap</has_slang_term>
+        <has_slang_term>Loperamidum</has_slang_term>
+        <has_slang_term>Lopes</has_slang_term>
+        <has_slang_term>Maalox Anti-Diarrheal</has_slang_term>
+        <has_slang_term>Pepto Diarrhea Control</has_slang_term>
+        <has_slang_term>Rho-Loperamide</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Lorazepam -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Lorazepam">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Benzodiazepine"/>
+        <has_slang_term>Ativan</has_slang_term>
+        <has_slang_term>Ativans</has_slang_term>
+        <rdfs:label>Lorazepam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Lorcet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Lorcet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <has_slang_term>Loricet</has_slang_term>
+        <rdfs:label>Lorcet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Lortab -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Lortab">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <has_slang_term>Lortabs</has_slang_term>
+        <rdfs:label>Lortab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Loss_of_Appetite -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Loss_of_Appetite">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <rdfs:label>Loss of Appetite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Lung_Cancer -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Lung_Cancer">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Respiratory_Problems"/>
+        <rdfs:label>Lung_Cancer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#M-Eslon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#M-Eslon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>M-Eslon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#M.O.S -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#M.O.S">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>M.O.S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MDMA -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#MDMA">
+        <has_slang_term>E</has_slang_term>
+        <has_slang_term>Ecstasy</has_slang_term>
+        <has_slang_term>Molly</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MDVP -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#MDVP">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Bath_salts"/>
+        <has_slang_term>bath salts</has_slang_term>
+        <rdfs:label>MDVP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MSIR -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#MSIR">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>MSIR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MS_L -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#MS_L">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>MS/L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#MS_S -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#MS_S">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>MS/S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Marijuana -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Marijuana">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cannabinoids"/>
+        <has_slang_term>Cannabis</has_slang_term>
+        <has_slang_term>bud</has_slang_term>
+        <has_slang_term>dank</has_slang_term>
+        <has_slang_term>herb</has_slang_term>
+        <has_slang_term>mids</has_slang_term>
+        <has_slang_term>mj</has_slang_term>
+        <has_slang_term>pot</has_slang_term>
+        <has_slang_term>schwag</has_slang_term>
+        <has_slang_term>weed</has_slang_term>
+        <rdfs:label>Marijuana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Mecodin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Mecodin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Mecodin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Mephedrone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Mephedrone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Bath_salts"/>
+        <has_slang_term>bath salts</has_slang_term>
+        <has_slang_term>drone</has_slang_term>
+        <has_slang_term>meph</has_slang_term>
+        <rdfs:label>Mephedrone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Mephenon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Mephenon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Mephenon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Mescaline -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Mescaline">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hallucinogen"/>
+        <rdfs:label>Mescaline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methadone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Methadone">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/058gq"/>
+        <owl:sameAs rdf:resource="http://sw.opencyc.org/concept/Mx4rwBGgXJwpEbGdrcN5Y29ycA"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00333"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4095"/>
+        <has_slang_term>Done</has_slang_term>
+        <has_slang_term>Meth</has_slang_term>
+        <has_slang_term>done</has_slang_term>
+        <has_slang_term>m.done</has_slang_term>
+        <has_slang_term>mdone</has_slang_term>
+        <has_slang_term>mmt</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methadose -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Methadose">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Methadose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methamphetamine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Methamphetamine">
+        <has_slang_term>crank</has_slang_term>
+        <has_slang_term>crystal</has_slang_term>
+        <has_slang_term>crystal meth</has_slang_term>
+        <has_slang_term>glass</has_slang_term>
+        <has_slang_term>ice</has_slang_term>
+        <has_slang_term>meth</has_slang_term>
+        <has_slang_term>speed</has_slang_term>
+        <has_slang_term>tweak</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Methylphenidate -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Methylphenidate">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Stimulant"/>
+        <has_slang_term>Concerta</has_slang_term>
+        <has_slang_term>Ritalin</has_slang_term>
+        <rdfs:label>Methylphenidate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Miadone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Miadone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Miadone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Microwave -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Microwave">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Milligram -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Milligram">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <has_slang_term>mg</has_slang_term>
+        <rdfs:label>Milligram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Milliliter -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Milliliter">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <rdfs:label>Milliliter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Moheptan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Moheptan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Moheptan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Morgesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Morgesic">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Morgesic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Morphine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Morphine">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/055pr"/>
+        <owl:sameAs rdf:resource="http://sw.opencyc.org/concept/Mx4rwQ6EdpwpEbGdrcN5Y29ycA"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00295"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4253"/>
+        <has_slang_term>Kapanol</has_slang_term>
+        <has_slang_term>Miss Emma</has_slang_term>
+        <has_slang_term>Monkey</has_slang_term>
+        <has_slang_term>Morf</has_slang_term>
+        <has_slang_term>Morph</has_slang_term>
+        <has_slang_term>Morphide</has_slang_term>
+        <has_slang_term>Morphie</has_slang_term>
+        <has_slang_term>Morpho</has_slang_term>
+        <has_slang_term>Morphy</has_slang_term>
+        <has_slang_term>Murphy</has_slang_term>
+        <has_slang_term>big M</has_slang_term>
+        <has_slang_term>coby</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ms_Contin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ms_Contin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <has_slang_term>ms</has_slang_term>
+        <has_slang_term>mscontin</has_slang_term>
+        <has_slang_term>mscontins</has_slang_term>
+        <rdfs:label>Ms Contin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Naloxone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Naloxone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <has_slang_term>Narcan</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Nasalfent -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Nasalfent">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Fentanyl"/>
+        <rdfs:label>Nasalfent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Nausea">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <rdfs:label>Nausea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Nepenthe -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Nepenthe">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Nepenthe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Nod -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Nod">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>In and Out</has_slang_term>
+        <has_slang_term>Nodding</has_slang_term>
+        <rdfs:label>Nod</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Norco -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Norco">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <has_slang_term>Norcos</has_slang_term>
+        <rdfs:label>Norco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Norspan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Norspan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Norspan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Novolaudon -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Novolaudon">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Novolaudon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Numorphan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Numorphan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxymorphone"/>
+        <rdfs:label>Numorphan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#OMS_Concentrate -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#OMS_Concentrate">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>OMS Concentrate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#OPANA_ER -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#OPANA_ER">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxymorphone"/>
+        <rdfs:label>OPANA ER</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Opana -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Opana">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxymorphone"/>
+        <has_slang_term>opanas</has_slang_term>
+        <rdfs:label>Opana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Opioid -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Opioid">
+        <has_slang_term>narcotic</has_slang_term>
+        <has_slang_term>narcotics</has_slang_term>
+        <has_slang_term>opes</has_slang_term>
+        <has_slang_term>opiate</has_slang_term>
+        <has_slang_term>opiates</has_slang_term>
+        <has_slang_term>opies</has_slang_term>
+        <has_slang_term>opiod</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Opium -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Opium">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <rdfs:label>Opium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oral -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oral">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>ate</has_slang_term>
+        <has_slang_term>chew</has_slang_term>
+        <has_slang_term>chewing</has_slang_term>
+        <has_slang_term>eat</has_slang_term>
+        <has_slang_term>ingest</has_slang_term>
+        <rdfs:label>Oral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oramorph_SR -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oramorph_SR">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Oramorph SR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Orange_Juice -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Orange_Juice">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Citrus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ospalivina -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ospalivina">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Ospalivina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Overdose -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Overdose">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <has_slang_term>OD</has_slang_term>
+        <has_slang_term>OD&apos;s</has_slang_term>
+        <has_slang_term>OD_death</has_slang_term>
+        <has_slang_term>OD_deaths</has_slang_term>
+        <has_slang_term>ODed</has_slang_term>
+        <has_slang_term>overdosed</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#OxyFAST -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#OxyFAST">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>OxyFAST</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#OxyIR -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#OxyIR">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>OxyIR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#OxyNorm -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#OxyNorm">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>OxyNorm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycodone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxycodone">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/05q1y"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00497"/>
+        <has_slang_term>oxy</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycodone_IR -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxycodone_IR">
+        <has_slang_term>IR oxy</has_slang_term>
+        <has_slang_term>oxy IR</has_slang_term>
+        <has_slang_term>oxycodone immediate release</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycontin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxycontin">
+        <has_slang_term>Hillbilly Heroin</has_slang_term>
+        <has_slang_term>Oxycs</has_slang_term>
+        <has_slang_term>Oxys</has_slang_term>
+        <has_slang_term>ocean cities</has_slang_term>
+        <has_slang_term>ocean citys</has_slang_term>
+        <has_slang_term>oxicotten</has_slang_term>
+        <has_slang_term>oxies</has_slang_term>
+        <has_slang_term>oxy</has_slang_term>
+        <has_slang_term>oxy ER</has_slang_term>
+        <has_slang_term>oxyC</has_slang_term>
+        <has_slang_term>oxycodone ER</has_slang_term>
+        <has_slang_term>oxycodone,extended release</has_slang_term>
+        <has_slang_term>oxycontin</has_slang_term>
+        <has_slang_term>oxycontins</has_slang_term>
+        <has_slang_term>oxycotin</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycontin_OC -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxycontin_OC">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycontin"/>
+        <has_slang_term>O.G.80</has_slang_term>
+        <has_slang_term>OC</has_slang_term>
+        <has_slang_term>OC&apos;s</has_slang_term>
+        <has_slang_term>OCs</has_slang_term>
+        <has_slang_term>OG 40</has_slang_term>
+        <has_slang_term>OG 40s</has_slang_term>
+        <has_slang_term>OG 80</has_slang_term>
+        <has_slang_term>OG 80s</has_slang_term>
+        <has_slang_term>OG OC</has_slang_term>
+        <has_slang_term>OG/OC</has_slang_term>
+        <has_slang_term>OG40</has_slang_term>
+        <has_slang_term>OG40s</has_slang_term>
+        <has_slang_term>OG80</has_slang_term>
+        <has_slang_term>OG80s</has_slang_term>
+        <has_slang_term>real_oxy</has_slang_term>
+        <has_slang_term>real_oxys</has_slang_term>
+        <rdfs:label>Oxycontin OC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxycontin_OP -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxycontin_OP">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycontin"/>
+        <has_slang_term>OP 80</has_slang_term>
+        <has_slang_term>OP/80</has_slang_term>
+        <has_slang_term>OP40</has_slang_term>
+        <has_slang_term>OP80</has_slang_term>
+        <has_slang_term>OPs</has_slang_term>
+        <has_slang_term>new oxy</has_slang_term>
+        <has_slang_term>reformulated oxy</has_slang_term>
+        <rdfs:label>Oxycontin OP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Oxymorphone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Oxymorphone">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/03ld4k"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01192"/>
+        <has_slang_term>oxyM</has_slang_term>
+        <has_slang_term>oxymorph</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Palladone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Palladone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydromorphone"/>
+        <rdfs:label>Palladone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Percocet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Percocet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <has_slang_term>Perc</has_slang_term>
+        <has_slang_term>Percocets</has_slang_term>
+        <has_slang_term>Percs</has_slang_term>
+        <has_slang_term>Perk</has_slang_term>
+        <has_slang_term>Perks</has_slang_term>
+        <rdfs:label>Percocet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Percodan -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Percodan">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Percodan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Percolone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Percolone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Percolone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Phenadone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Phenadone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Phenadone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Pill -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Pill">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Unit"/>
+        <has_slang_term>tablets</has_slang_term>
+        <has_slang_term>tabs</has_slang_term>
+        <rdfs:label>Pill</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Poppy_tea -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Poppy_tea">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <has_slang_term>Pod</has_slang_term>
+        <has_slang_term>Pod tea</has_slang_term>
+        <has_slang_term>Pods</has_slang_term>
+        <has_slang_term>Poppy pods</has_slang_term>
+        <has_slang_term>Poppy seed tea</has_slang_term>
+        <rdfs:label>Poppy tea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Pregabalin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Pregabalin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <has_slang_term>Lyrica</has_slang_term>
+        <rdfs:label>Pregabalin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Probuphine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Probuphine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend"/>
+        <rdfs:label>Probuphine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Proglumide -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Proglumide">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Drug"/>
+        <has_slang_term>Milid</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Propoxyphene -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Propoxyphene">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Opioid"/>
+        <has_slang_term>Darvocet</has_slang_term>
+        <has_slang_term>Darvon</has_slang_term>
+        <rdfs:label>Propoxyphene</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Psilocybin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Psilocybin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hallucinogen"/>
+        <has_slang_term>mushrooms</has_slang_term>
+        <has_slang_term>shrooms</has_slang_term>
+        <rdfs:label>Psilocybin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Psychoactive_Effects -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Psychoactive_Effects">
+        <has_slang_term>Buzz</has_slang_term>
+        <has_slang_term>Buzzed</has_slang_term>
+        <has_slang_term>Feeling</has_slang_term>
+        <has_slang_term>Glow</has_slang_term>
+        <has_slang_term>High</has_slang_term>
+        <has_slang_term>Stonned</has_slang_term>
+        <has_slang_term>Warmfuzziness</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Quinine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Quinine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Nutritional_Products"/>
+        <has_slang_term>Tonic_water</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#RMS_Uniserts -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#RMS_Uniserts">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>RMS Uniserts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ralivia -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ralivia">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Ralivia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Rectal -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Rectal">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>plug</has_slang_term>
+        <has_slang_term>plugged</has_slang_term>
+        <has_slang_term>plugging</has_slang_term>
+        <rdfs:label>Plugging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Rescudose -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Rescudose">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Rescudose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Roxanol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Roxanol">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Roxanol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Roxicet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Roxicet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Roxicet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Roxicodone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Roxicodone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <has_slang_term>A 214</has_slang_term>
+        <has_slang_term>A 215</has_slang_term>
+        <has_slang_term>A/214</has_slang_term>
+        <has_slang_term>A/215</has_slang_term>
+        <has_slang_term>A214</has_slang_term>
+        <has_slang_term>A215</has_slang_term>
+        <has_slang_term>Perc</has_slang_term>
+        <has_slang_term>Percs</has_slang_term>
+        <has_slang_term>Perk</has_slang_term>
+        <has_slang_term>Perks</has_slang_term>
+        <has_slang_term>Rox</has_slang_term>
+        <has_slang_term>Roxe</has_slang_term>
+        <has_slang_term>Roxi</has_slang_term>
+        <has_slang_term>Roxies</has_slang_term>
+        <has_slang_term>Roxy</has_slang_term>
+        <has_slang_term>Roxycodone</has_slang_term>
+        <rdfs:label>Roxicodone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Roxiprin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Roxiprin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Roxiprin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Rybix -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Rybix">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Rybix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ryzolt -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ryzolt">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Ryzolt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Schizophrenia -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Schizophrenia">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Mental_Health_Problems"/>
+        <rdfs:label>Schizophrenia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Sedation -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Sedation">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Psychoactive_Effects"/>
+        <has_slang_term>Calm</has_slang_term>
+        <has_slang_term>Calming</has_slang_term>
+        <has_slang_term>Sedate</has_slang_term>
+        <has_slang_term>Sedative</has_slang_term>
+        <rdfs:label>Sedation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Smoking -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Smoking">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>chase the dragon</has_slang_term>
+        <has_slang_term>chasing the dragon</has_slang_term>
+        <has_slang_term>smoke</has_slang_term>
+        <has_slang_term>smoked</has_slang_term>
+        <rdfs:label>Smoking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Statex -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Statex">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Statex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Statex_Drops -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Statex_Drops">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>Statex Drops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Stimulant -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Stimulant">
+        <has_slang_term>Stim</has_slang_term>
+        <has_slang_term>Stims</has_slang_term>
+        <has_slang_term>Stimulants</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Sublimaze -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Sublimaze">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Fentanyl"/>
+        <rdfs:label>Sublimaze</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Sublingual -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Sublingual">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Route_of_administration"/>
+        <has_slang_term>keep_under_tongue</has_slang_term>
+        <has_slang_term>put_under_tongue</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Suboxone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Suboxone">
+        <has_slang_term>Saboxine</has_slang_term>
+        <has_slang_term>Sobos</has_slang_term>
+        <has_slang_term>Sub</has_slang_term>
+        <has_slang_term>Subox</has_slang_term>
+        <has_slang_term>Suboxene</has_slang_term>
+        <has_slang_term>Subs</has_slang_term>
+        <has_slang_term>Xone</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Suboxone_film -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Suboxone_film">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Suboxone"/>
+        <has_slang_term>Sub_strip</has_slang_term>
+        <has_slang_term>Sub_strips</has_slang_term>
+        <has_slang_term>Suboxone_strip</has_slang_term>
+        <has_slang_term>bupe_film</has_slang_term>
+        <has_slang_term>bupe_strip</has_slang_term>
+        <has_slang_term>films</has_slang_term>
+        <rdfs:label>Suboxone film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Suboxone_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Suboxone_tablet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Suboxone"/>
+        <rdfs:label>Suboxone tablet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Subutex -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Subutex">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend"/>
+        <has_slang_term>Subbies</has_slang_term>
+        <has_slang_term>Subs</has_slang_term>
+        <has_slang_term>sub</has_slang_term>
+        <has_slang_term>tecs</has_slang_term>
+        <has_slang_term>tex</has_slang_term>
+        <rdfs:label>Subutex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Supeudol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Supeudol">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Supeudol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Supression_of_Pain -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Supression_of_Pain">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Pain Relief</has_slang_term>
+        <has_slang_term>Relieve Pain</has_slang_term>
+        <has_slang_term>Take away pain</has_slang_term>
+        <rdfs:label>Supression of Pain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Sweating -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Sweating">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Sweat</has_slang_term>
+        <rdfs:label>Sweating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Synthetic_cannabis -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Synthetic_cannabis">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Cannabinoids"/>
+        <has_slang_term>K2</has_slang_term>
+        <has_slang_term>Spice</has_slang_term>
+        <has_slang_term>Synthetic cannabinoids</has_slang_term>
+        <rdfs:label>Synthetic cannabis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Temgesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Temgesic">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Temgesic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tidigesic -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Tidigesic">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Buprenorphine_analgesic"/>
+        <rdfs:label>Tidigesic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Tramadol">
+        <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m/01l6z8"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00193"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/5523"/>
+        <has_slang_term>Tram</has_slang_term>
+        <has_slang_term>Trams</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tussionex -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Tussionex">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Tussionex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tussol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Tussol">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Tussol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Tylox -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Tylox">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Oxycodone_IR"/>
+        <rdfs:label>Tylox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ultracet -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ultracet">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Ultracet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Ultram -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Ultram">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Ultram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Unit -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Unit"/>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#User -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#User">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Person"/>
+        <has_slang_term>SWIM</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Vicodin -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Vicodin">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <has_slang_term>Vic</has_slang_term>
+        <has_slang_term>Vicoden</has_slang_term>
+        <has_slang_term>Vics</has_slang_term>
+        <has_slang_term>Vike</has_slang_term>
+        <has_slang_term>Vikes</has_slang_term>
+        <rdfs:label>Vicodin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Vicoprofen -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Vicoprofen">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <rdfs:label>Vicoprofen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Vomiting">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Physical_Effects"/>
+        <has_slang_term>Vomit</has_slang_term>
+        <has_slang_term>threw up</has_slang_term>
+        <has_slang_term>throw up</has_slang_term>
+        <has_slang_term>vomited</has_slang_term>
+        <rdfs:label>Vomiting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Westadone -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Westadone">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Methadone"/>
+        <rdfs:label>Westadone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Withdrawal -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Withdrawal">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Medical_conditions"/>
+        <has_slang_term>PAWS</has_slang_term>
+        <has_slang_term>PWS</has_slang_term>
+        <has_slang_term>W/D</has_slang_term>
+        <has_slang_term>WD</has_slang_term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Zohydro -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Zohydro">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Hydrocodone"/>
+        <has_slang_term>Zohydros</has_slang_term>
+        <rdfs:label>Zohydro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#Zydol -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#Zydol">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Tramadol"/>
+        <rdfs:label>Zydol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knoesis.org/ontology/predose#l-Morphine -->
+
+    <owl:NamedIndividual rdf:about="http://knoesis.org/ontology/predose#l-Morphine">
+        <rdf:type rdf:resource="http://knoesis.org/ontology/predose#Morphine"/>
+        <rdfs:label>l-Morphine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/01l6z8 -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/01l6z8"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/01qydv -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/01qydv"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/01v2_g -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/01v2_g"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/011w3r -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/011w3r"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/03brks -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/03brks"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/03ld4k -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/03ld4k"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/03n5b -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/03n5b"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/03r3h -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/03r3h"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/05q1y -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/05q1y"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/055pr -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/055pr"/>
+    
+
+
+    <!-- http://rdf.freebase.com/ns/m/058gq -->
+
+    <owl:NamedIndividual rdf:about="http://rdf.freebase.com/ns/m/058gq"/>
+    
+
+
+    <!-- http://sw.opencyc.org/concept/Mx4rv-as85wpEbGdrcN5Y29ycA -->
+
+    <owl:NamedIndividual rdf:about="http://sw.opencyc.org/concept/Mx4rv-as85wpEbGdrcN5Y29ycA"/>
+    
+
+
+    <!-- http://sw.opencyc.org/concept/Mx4rwBGgXJwpEbGdrcN5Y29ycA -->
+
+    <owl:NamedIndividual rdf:about="http://sw.opencyc.org/concept/Mx4rwBGgXJwpEbGdrcN5Y29ycA"/>
+    
+
+
+    <!-- http://sw.opencyc.org/concept/Mx4rwQ6EdpwpEbGdrcN5Y29ycA -->
+
+    <owl:NamedIndividual rdf:about="http://sw.opencyc.org/concept/Mx4rwQ6EdpwpEbGdrcN5Y29ycA"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00193 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00193"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00295 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00295"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00327 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00327"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00333 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00333"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00497 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00497"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00813 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00813"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00836 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00836"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00921 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00921"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00956 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00956"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01192 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01192"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01452 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01452"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/2476 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/2476"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3345 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3345"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3648 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3648"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3954 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/3954"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4095 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4095"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4253 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/4253"/>
+    
+
+
+    <!-- http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/5523 -->
+
+    <owl:NamedIndividual rdf:about="http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/5523"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Addiction">
+        <rdfs:label>Addiction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Amphetamine">
+        <rdfs:label>Amphetamine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Benzodiazepine">
+        <rdfs:label>Benzodiazepine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Buprenorphine">
+        <rdfs:label>Buprenorphine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_analgesic">
+        <rdfs:label>Buprenorphine analgesic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Buprenorphine_opioid_depend">
+        <rdfs:label>Buprenorphine opioid dependence</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Cimetidine">
+        <rdfs:label>Cimetidine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Citrus">
+        <rdfs:label>Citrus</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Cocaine">
+        <rdfs:label>Cocaine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Detoxification">
+        <rdfs:label>Detoxification</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Diphenhydramine">
+        <rdfs:label>Diphenhydramine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Dose">
+        <rdfs:label>Amount</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Fentanyl">
+        <rdfs:label>Fentanyl</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Friend">
+        <rdfs:label>Friend</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Hydrocodone">
+        <rdfs:label>Hydrocodone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Hydromorphone">
+        <rdfs:label>Hydromorphone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Loperamide">
+        <rdfs:label>Loperamide</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#MDMA">
+        <rdfs:label>MDMA</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Methadone">
+        <rdfs:label>Methadone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Methamphetamine">
+        <rdfs:label>Methamphetamine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Morphine">
+        <rdfs:label>Morphine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Naloxone">
+        <rdfs:label>Naloxone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Opioid">
+        <rdfs:label>Opioid</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Overdose">
+        <rdfs:label>Overdose</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Oxycodone">
+        <rdfs:label>Oxycodone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Oxycodone_IR">
+        <rdfs:label>Oxycodone IR</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Oxycontin">
+        <rdfs:label>Oxycontin</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Oxymorphone">
+        <rdfs:label>Oxymorphone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Psychoactive_Effects">
+        <rdfs:label>Psychoactive effects</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Quinine">
+        <rdfs:label>Quinine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Stimulant">
+        <rdfs:label>Stimulant</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Suboxone">
+        <rdfs:label>Suboxone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Tramadol">
+        <rdfs:label>Tramadol</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Unit">
+        <rdfs:label>Unit</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#User">
+        <rdfs:label>User</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knoesis.org/ontology/predose#Withdrawal">
+        <rdfs:label>Withdrawal</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

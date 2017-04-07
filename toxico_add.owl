@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Ontology [
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+<!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<Ontology>
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+
+<Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#"/>
+</Declaration>
+<?xml version="1.0"?>
+
+<!DOCTYPE Ontology [
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+<!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+xml:base="http://www.w3.org/2002/07/owl#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+
+<Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#"/>
+</Declaration>
+<Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#l-glutamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-t-21"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-meo-dmt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxycodone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#modafinil"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-ho-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#niacin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-mapb"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tranylcypromine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mullein"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#freon"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hypericum"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methcathinone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#selegiline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#fluoxetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#propane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pseudoephedrine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#amanita"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-meo-amt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#smiley dog"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5meo-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bk-mdda"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#theanine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dextropropoxyphene"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#copelandia cyanescens"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lactua"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clozapine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#propanolol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#moclobemide"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#poppy"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#propellant"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methyl-j"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenibut"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pentobarbital"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#gasoline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-ho-met"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#citicholine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pma"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#etizolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chaliponga"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#vicks"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#barbiturate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#caffeine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#alprazolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#huperzine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#harmaline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#catuaba"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#isobutane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#woodrose"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#alpha-php"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#topiramate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ethanol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#secobarbital"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clorazepate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pedicularis"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenelzine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-aco-det"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#zacatechichi"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dmmda"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#temazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cinnamon"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bod"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clonidine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pmma"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#vasopressin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#piper methysticum"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#l-dopa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cocaine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#anadenanthera"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#triprolidine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#albuterol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mitragyna speciosa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bufotenin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-ho-dmt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cannabis"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pregabalin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#khat"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#aspirin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chlorpromazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#allylescaline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chocolate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#butabital"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxymorphone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mescaline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#psilocybin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#piperazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lisdexamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#duster"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#det"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bk-2c-b"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#c.roseus"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lobelia"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#aripiprazole"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#metoprolol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#propoxyphene"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mirtazapine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#capsaicin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dxo"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#xylazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dxm"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#quetiapine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#diclazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mpa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#citalopram"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#turnera"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#choline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nitrous oxide"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phalaris"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mt-45"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#salicin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-t-7"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-t-4"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-t-2"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-tfm"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ghv"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-oh-det"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdai"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ghb"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-ef"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#sceletium"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lsd"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-meo-mipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lsa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#sertraline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tramadol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#manaca"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#levamisole"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#paracetamol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lsz"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#leonotis leonurus"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cp55-940"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#vinpocetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pcp"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#midazolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hyoscine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pyridoxine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-fluoroamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nicotiana rustica"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#armodafinil"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#diamond spirit"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#n02"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#jwh-018"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ayahuasca"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxygen"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#stanozolol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#xlr-11"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#flunitrazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bk-mdma"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#spice diamond"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdoh"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dimenhydrinate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#plectranthus scutellarioides"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nicotine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#naloxone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#carbon dioxide"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mda"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mde"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ginkgo biloba"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phentermine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#paint thinner"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-apb"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#xyrem"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#etaqualone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#eth-lad"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methallylescaline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#eszopiclone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#halothane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#thujone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methaqualone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#heroin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdpv"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#loratadine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nymphaea caerulea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdpr"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tianeptine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bupropion"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-meo-mipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methedrone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#al-lad"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ethylphenidate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#yarrow"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#metaxolone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#6-apb"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#meclizine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#fenfluramine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tetrafluorethane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#brugmansia suaveolens"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#skullcap"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tapentadol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pramipexole"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#risperidone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tfmpp"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ab-fubinaca"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mmda"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#iap"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#escaline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#magnesium"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#gabob"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-acetoxy-mipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#14-butanediol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#levomethamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#calea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ssris"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chlorodifluoromethane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenazapam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-methylcathinone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#diazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-methoxymethcathinone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#passion flower"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cyclizine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#3-fpm"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pyrovalerone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#k2"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#naproxen"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#morning glory"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#butalbital"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#carbidopa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#glycyrrhizin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ritonavir"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#glaucine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methadone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clonazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methylphenidate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mimosa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#silene capensis"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#linezolid"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dmea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nbome"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#am-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nabilone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#doi"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#king kong"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dob"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bdb"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nefazodone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#a-methylfentanyl"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pfpp"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ginseng"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dioscorea dregeana"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#green tea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cannabinoid"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-acetoxy-det"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#milk thistle"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chamomile"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chloroethane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#3c-e"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nitrous"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2ct-2"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#3c-p"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#levometamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dopr"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dpt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#aet"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tobacco"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#atomoxetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#heimia salicifolia"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#yohimbe"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nutmeg"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#benzylpiperazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#gabapentin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bromo dragonfly"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#am-2201"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#t.terscheckii"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methocarbamol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cerebrolysin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phosphatidylserine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#naphyrone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bombay blue"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ah-7921"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#buphedrone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lecithin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#butane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#venlafaxine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-p"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#voacanga africana"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pennyroyal"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dimethocaine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pineapple spice"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-b"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#piracetam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#reboxetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mollys plant food"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-d"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-e"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-i"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#GABA"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#zopiclone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#peyote"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#doxycycline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chlorpheniramine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ether"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lorcaserin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#naltrexone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#t.peruvianus"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#grapefruit"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#brunfelsia"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#isopropylphenidate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenytoin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#meclofenoxate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#jwh-210"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hyoscyamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#amitriptyline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#t.bridgesii"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdmb-chmica"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#buprenorphine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lamotrigine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dhea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#sound"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bearberry"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#sildenafil"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#calcium"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bk-mdpa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdma"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pyrazolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#meperidine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mugwort"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#gotu kola"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#n2o"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#difluoroethane"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clonazolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bk-mdea"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hydrocodone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#promethazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hydromorphone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cacao"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-mmc"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-c"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methoxetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#amyl nitrite"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lagochilus inebrians"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxybate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lithium"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#bonzai"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#kush"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methylmethaqualone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#galantamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#chloroform"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#hydroxyzine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#zaleplon"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#codeine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-acetoxy-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#meopp"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#olanzapine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mentha pulegium"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-aco-dmt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#escitalopram"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tansy"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#argyreia nervosa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#glue"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#calamus"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ketamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#beta-blocker"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#fentanyl"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#guaifenesin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#butylone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#trihexyphenidyl"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#diphenhydramine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#adrafinil"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#atropine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#amt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#toluene"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#black mamba"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#spike99"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#glucosamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ethylcathinone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#opioid"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#holy basil"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#phenylalanine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#flubromazolam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ibuprofen"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ergoloid"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#gvl"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#benzodiazepine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tma"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#doet"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2-ct-2"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#atenolol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#maoi"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#trazodone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#nelumbo"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2-ct-21"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#acorus gramineus"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#duloxetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#yerba mate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#methylone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#synephrine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#cyclobenzaprine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#propylhexedrine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-methoxytryptamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#meta-chlorophenylpiperazine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dizocilpine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#funky monkey"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#zolpidem"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tyrosine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dextroamphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#lorazepam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pentylone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#aniracetam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mulberry"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#valerian"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ephedrine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#tryptophan"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#theobromine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#19-norandrostenedione"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#salvia"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dmt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-meo-dalt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-aco-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#paroxetine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#haloperidol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#theophylline"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#5-meo-dipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#pramiracetam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#alpha-pvp"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#melatonin"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#acacia"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#mdmb-chminaca"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#carisoprodol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#acetaminophen"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#doxylamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ziprasidone"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#baclofen"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#erythroxylum coca"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#clenbuterol"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#valproate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ibogaine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#4-ho-mipt"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#san pedro"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dihydrocodeine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#diphenidine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#1p-lsd"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#amphetamine"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#aconitum"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#oxiracetam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#2c-b-fly"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#l.virosa"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#guarana"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#wild yam"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#dexmethylphenidate"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#xenon"/>
+</Declaration><Declaration>
+	<Class IRI="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl#ethyl ether"/>
+</Declaration></Ontology>
