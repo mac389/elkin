@@ -33,7 +33,7 @@
 		"class": ["plant"]
 	},
 	"sound": {
-		"class": "sound",
+		"class": ["sound"],
 		"effects": ["stimulant", "nootropic", "antidepressant", "dissociative"]
 	},
 	"isopropylphenidate": {

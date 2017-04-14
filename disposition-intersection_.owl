@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#signaling_pathaway_PKA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PKA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_to_signal_through_Gi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#signaling_pathway_PKA_inhibitory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#signaling_pathway_PKA_excitatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_AB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition_to_signal_through_Gs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_disposition_to_signal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disposition_of_to_signal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_disposition_target_pathways"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#disposition_AB"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#disposition"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_disposition"/>
+                    <Class IRI="#disposition_A"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_disposition"/>
+                    <Class IRI="#disposition_B"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#A"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_disposition"/>
+            <Class IRI="#disposition_A"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_disposition"/>
+            <Class IRI="#disposition_B"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_disposition"/>
+            <Class IRI="#disposition_B"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_disposition_to_signal"/>
+            <Class IRI="#disposition_to_signal_through_Gi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gi"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part_of"/>
+            <Class IRI="#signaling_pathway_PKA_inhibitory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gs"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gs"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part_of"/>
+            <Class IRI="#signaling_pathway_PKA_excitatory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PKA"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PKA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part_of"/>
+            <Class IRI="#signaling_pathway_PKA_excitatory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PKA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part_of"/>
+            <Class IRI="#signaling_pathway_PKA_inhibitory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_disposition_target_pathways"/>
+            <Class IRI="#signaling_pathway_PKA_excitatory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_A"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_AB"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_B"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_C"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_to_signal_through_Gi"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition_to_signal_through_Gs"/>
+        <Class IRI="#disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathaway_PKA"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathaway_PKA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_member"/>
+            <Class IRI="#PKA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathway_PKA_excitatory"/>
+        <Class IRI="#signaling_pathaway_PKA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathway_PKA_excitatory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_member"/>
+            <Class IRI="#Gs"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathway_PKA_inhibitory"/>
+        <Class IRI="#signaling_pathaway_PKA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signaling_pathway_PKA_inhibitory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_member"/>
+            <Class IRI="#Gi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#A"/>
+        <Class IRI="#B"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#disposition"/>
+        <Class IRI="#object"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_disposition_to_signal"/>
+        <ObjectProperty IRI="#has_disposition"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#disposition_of_to_signal"/>
+        <ObjectProperty IRI="#has_disposition_to_signal"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_member"/>
+        <ObjectProperty IRI="#part_of"/>
+    </InverseObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

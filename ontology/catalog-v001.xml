@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pw/7.42/pw.owl" uri="pw.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/MFOMD.owl" uri="mental-function.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/MFOMD/external/doid-slim.owl" uri="doid-slim.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/bfo.owl" uri="bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/mop.owl" uri="mop.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/ogms.owl" uri="ogms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/pw.owl" uri="pw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/symp.owl" uri="symp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1492190926518" name="http://purl.obolibrary.org/obo/toxico.owl" uri="toxico.owl"/>
+    </group>
+</catalog>

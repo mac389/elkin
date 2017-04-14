@@ -1,0 +1,3282 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.biopax.org/release/biopax-level3.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.biopax.org/release/biopax-level3.owl">
+    <Prefix name="" IRI="http://www.biopax.org/release/biopax-level3.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This is version 1.0  of the BioPAX Level 3 ontology.  The goal of the BioPAX group is to develop a common exchange format for biological pathway data.  More information is available at http://www.biopax.org.  This ontology is freely available under the LGPL (http://www.gnu.org/copyleft/lesser.html).</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#BindingFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evidenceCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#confidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#standardName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#entityFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pMg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controlled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participantStoichiometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallMoleculeReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cofactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnificationXref"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#displayName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pathwayOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deltaH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModificationFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#xref"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modificationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eCNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#availability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#controlType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relationshipType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interactionScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationshipXref"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tissue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ph"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#left"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#kEQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#featureLocationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UtilityClass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#positionStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deltaG"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#right"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#featureLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#structure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#physicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#componentStoichiometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlledVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xref"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#template"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberPhysicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dbVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#absoluteRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#experimentalFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provenance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#structureFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cellularLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deltaS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#experimentalFormDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dataSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellularLocationVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RnaReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiochemicalPathwayStep"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#db"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organism"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RnaRegionReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stepConversion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spontaneous"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#phenotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DnaReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#intraMolecular"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ionicStrength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kPrime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deltaGPrime0"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sequencePosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stepProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DnaRegionReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KPrime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#experimentalFormEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#chemicalFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#catalysisDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scoreSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stoichiometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CovalentBindingFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#experimentalForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentalForm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#templateDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractionVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberEntityReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pathwayComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bindsTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeltaG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FragmentFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interactionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#comment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#feature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nextStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stepDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceInterval"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#entityReferenceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TissueVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicationXref"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#molecularWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#patoData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProteinReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#entityReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#structureData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cellType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#term"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PathwayStep"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#conversionDirection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BindingFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiochemicalPathwayStep"/>
+        <Class IRI="#PathwayStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalStructure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#structureData"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalStructure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#structureFormat"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlledVocabulary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#xref"/>
+            <Class IRI="#UnificationXref"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CovalentBindingFeature"/>
+        <Class IRI="#BindingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CovalentBindingFeature"/>
+        <Class IRI="#ModificationFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeltaG"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#deltaGPrime0"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#DnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#DnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DnaRegionReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#DnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evidence"/>
+        <ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#confidence"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#evidenceCode"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#experimentalForm"/>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalForm"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#experimentalFormDescription"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FragmentFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gene"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gene"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#organism"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPrime"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#kPrime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModificationFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pathway"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#ProteinReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provenance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#xref"/>
+            <ObjectUnionOf>
+                <Class IRI="#PublicationXref"/>
+                <Class IRI="#UnificationXref"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicationXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationshipXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RnaReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#RnaReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RnaReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RnaRegionReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RnaRegionReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#subRegion"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Score"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Score"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceInterval"/>
+        <Class IRI="#SequenceLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceLocation"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceModificationVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceRegionVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceSite"/>
+        <Class IRI="#SequenceLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallMoleculeReference"/>
+        <Class IRI="#EntityReference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallMoleculeReference"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberEntityReference"/>
+            <Class IRI="#SmallMoleculeReference"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stoichiometry"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stoichiometry"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#physicalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stoichiometry"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#stoichiometricCoefficient"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TissueVocabulary"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnificationXref"/>
+        <Class IRI="#Xref"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnificationXref"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#db"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnificationXref"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xref"/>
+        <Class IRI="#UtilityClass"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BindingFeature"/>
+        <Class IRI="#FragmentFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#ChemicalStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#DeltaG"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#EntityFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#EntityReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BioSource"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#CellularLocationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CellularLocationVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#DeltaG"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#EntityFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#EntityReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalStructure"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#DeltaG"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#EntityFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#EntityReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlledVocabulary"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#EntityFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#EntityReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeltaG"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#DnaRegionReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#ProteinReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#RnaReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#RnaRegionReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaReference"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#ProteinReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#RnaReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#RnaRegionReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DnaRegionReference"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#EntityReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityFeature"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#Evidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReference"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#ExperimentalForm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#KPrime"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalForm"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FragmentFeature"/>
+        <Class IRI="#ModificationFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gene"/>
+        <Class IRI="#Pathway"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InteractionVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#PathwayStep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KPrime"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#Provenance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathwayStep"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PhenotypeVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProteinReference"/>
+        <Class IRI="#RnaReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProteinReference"/>
+        <Class IRI="#RnaRegionReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProteinReference"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#Score"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Provenance"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PublicationXref"/>
+        <Class IRI="#UnificationXref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RnaReference"/>
+        <Class IRI="#RnaRegionReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RnaReference"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RnaRegionReference"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Score"/>
+        <Class IRI="#SequenceLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Score"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Score"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceInterval"/>
+        <Class IRI="#SequenceSite"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceLocation"/>
+        <Class IRI="#Stoichiometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceLocation"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceModificationVocabulary"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceModificationVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SequenceRegionVocabulary"/>
+        <Class IRI="#TissueVocabulary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Stoichiometry"/>
+        <Class IRI="#Xref"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cofactor"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#controlled"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#controller"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#left"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#product"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#right"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stepConversion"/>
+        <ObjectProperty IRI="#stepProcess"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#template"/>
+        <ObjectProperty IRI="#participant"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#bindsTo"/>
+        <ObjectProperty IRI="#bindsTo"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#absoluteRegion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#bindsTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#cellType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#cellularLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#controlled"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#entityReference"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#entityReferenceType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#modificationType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#organism"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#phenotype"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#physicalEntity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#regionType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#scoreSource"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#stepConversion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#structure"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#template"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tissue"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#bindsTo"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#component"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#entityFeature"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#bindsTo"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#memberFeature"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#memberPhysicalEntity"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#absoluteRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bindsTo"/>
+        <Class IRI="#BindingFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cellType"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#confidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#entityFeature"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#entityReferenceType"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evidenceCode"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#experimentalFeature"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#experimentalForm"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#experimentalFormDescription"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#experimentalFormEntity"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#featureLocation"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#featureLocationType"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memberEntityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memberFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modificationType"/>
+        <Class IRI="#ModificationFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organism"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#Gene"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#ProteinReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pathwayComponent"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pathwayOrder"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#physicalEntity"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regionType"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relationshipType"/>
+        <Class IRI="#RelationshipXref"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#scoreSource"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+        <Class IRI="#SequenceInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+        <Class IRI="#SequenceInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stepConversion"/>
+        <Class IRI="#BiochemicalPathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stepProcess"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#structure"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tissue"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#absoluteRegion"/>
+        <Class IRI="#SequenceLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bindsTo"/>
+        <Class IRI="#BindingFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cellType"/>
+        <Class IRI="#CellVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cellularLocation"/>
+        <Class IRI="#CellularLocationVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#componentStoichiometry"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#confidence"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dataSource"/>
+        <Class IRI="#Provenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deltaG"/>
+        <Class IRI="#DeltaG"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entityFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entityReferenceType"/>
+        <Class IRI="#EntityReferenceTypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evidenceCode"/>
+        <Class IRI="#EvidenceCodeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#experimentalFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#experimentalForm"/>
+        <Class IRI="#ExperimentalForm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#experimentalFormDescription"/>
+        <Class IRI="#ExperimentalFormVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#feature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#featureLocation"/>
+        <Class IRI="#SequenceLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#featureLocationType"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactionScore"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactionType"/>
+        <Class IRI="#InteractionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#kEQ"/>
+        <Class IRI="#KPrime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memberEntityReference"/>
+        <Class IRI="#EntityReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memberFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modificationType"/>
+        <Class IRI="#SequenceModificationVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#notFeature"/>
+        <Class IRI="#EntityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organism"/>
+        <Class IRI="#BioSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participantStoichiometry"/>
+        <Class IRI="#Stoichiometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pathwayOrder"/>
+        <Class IRI="#PathwayStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#phenotype"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regionType"/>
+        <Class IRI="#SequenceRegionVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relationshipType"/>
+        <Class IRI="#RelationshipTypeVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#scoreSource"/>
+        <Class IRI="#Provenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sequenceIntervalBegin"/>
+        <Class IRI="#SequenceSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sequenceIntervalEnd"/>
+        <Class IRI="#SequenceSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#structure"/>
+        <Class IRI="#ChemicalStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tissue"/>
+        <Class IRI="#TissueVocabulary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#xref"/>
+        <Class IRI="#Xref"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#displayName"/>
+        <DataProperty IRI="#name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#standardName"/>
+        <DataProperty IRI="#name"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#catalysisDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#chemicalFormula"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#controlType"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#conversionDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#db"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dbVersion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#deltaGPrime0"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#displayName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#idVersion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#intraMolecular"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ionicStrength"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#kPrime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#molecularWeight"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pMg"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#patoData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ph"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#positionStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sequence"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#sequencePosition"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#spontaneous"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#standardName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#stepDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#structureData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#structureFormat"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#temperature"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#templateDirection"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#value"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#year"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#author"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#chemicalFormula"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#db"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dbVersion"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deltaGPrime0"/>
+        <Class IRI="#DeltaG"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idVersion"/>
+        <Class IRI="#Xref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#intraMolecular"/>
+        <Class IRI="#BindingFeature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ionicStrength"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kPrime"/>
+        <Class IRI="#KPrime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#molecularWeight"/>
+        <Class IRI="#SmallMoleculeReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pMg"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#patoData"/>
+        <Class IRI="#PhenotypeVocabulary"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ph"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#positionStatus"/>
+        <Class IRI="#SequenceSite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sequence"/>
+        <ObjectUnionOf>
+            <Class IRI="#DnaReference"/>
+            <Class IRI="#DnaRegionReference"/>
+            <Class IRI="#ProteinReference"/>
+            <Class IRI="#RnaReference"/>
+            <Class IRI="#RnaRegionReference"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sequencePosition"/>
+        <Class IRI="#SequenceSite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stepDirection"/>
+        <Class IRI="#BiochemicalPathwayStep"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+        <Class IRI="#Stoichiometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#structureData"/>
+        <Class IRI="#ChemicalStructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#structureFormat"/>
+        <Class IRI="#ChemicalStructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperature"/>
+        <ObjectUnionOf>
+            <Class IRI="#DeltaG"/>
+            <Class IRI="#KPrime"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#term"/>
+        <Class IRI="#ControlledVocabulary"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#Score"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#PublicationXref"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#availability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#catalysisDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#chemicalFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#comment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#controlType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION-ALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ACTIVATION-NONALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-ALLOSTERIC</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-COMPETITIVE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-IRREVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-NONCOMPETITIVE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-OTHER</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">INHIBITION-UNCOMPETITIVE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#conversionDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#db"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dbVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deltaGPrime0"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deltaH"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deltaS"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#displayName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eCNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#intraMolecular"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ionicStrength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kPrime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#molecularWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pMg"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#patoData"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ph"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#positionStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EQUAL</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GREATER-THAN</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LESS-THAN</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sequence"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sequencePosition"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spontaneous"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#standardName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stepDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSIBLE</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RIGHT-TO-LEFT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stoichiometricCoefficient"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#structureData"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#structureFormat"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CML</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InChI</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SMILES</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#templateDirection"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FORWARD</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">REVERSE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#term"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BindingFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition : An entity feature that represent the bound state of a physical entity. A pair of binding features represents a bond. 
+
+Rationale: A physical entity in a molecular complex is considered as a new state of an entity as it is structurally and functionally different. Binding features provide facilities for describing these states. Similar to other features, a molecule can have bound and not-bound states. 
+
+Usage: Typically, binding features are present in pairs, each describing the binding characteristic for one of the interacting physical entities. One exception is using a binding feature with no paired feature to describe any potential binding. For example, an unbound receptor can be described by using a &quot;not-feature&quot; property with an unpaired binding feature as its value.  BindingSiteType and featureLocation allows annotating the binding location.
+
+IntraMolecular property should be set to &quot;true&quot; if the bond links two parts of the same molecule. A pair of binding features are still used where they are owned by the same physical entity. 
+
+If the binding is due to the covalent interactions, for example in the case of lipoproteins, CovalentBindingFeature subclass should be used instead of this class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BioSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The biological source (organism, tissue or cell type) of an Entity. 
+
+Usage: Some entities are considered source-neutral (e.g. small molecules), and the biological source of others can be deduced from their constituentss (e.g. complex, pathway).
+
+Instances: HeLa cells, Homo sapiens, and mouse liver tissue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiochemicalPathwayStep</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: Imposes ordering on a step in a biochemical pathway. 
+Retionale: A biochemical reaction can be reversible by itself, but can be physiologically directed in the context of a pathway, for instance due to flux of reactants and products. 
+Usage: Only one conversion interaction can be ordered at a time, but multiple catalysis or modulation instances can be part of one step.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CellVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the Cell Type Ontology (CL). Homepage at http://obofoundry.org/cgi-bin/detail.cgi?cell.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=CL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CellularLocationVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the Gene Ontology Cellular Component (GO CC) ontology. Homepage at http://www.geneontology.org.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=GO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChemicalStructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The chemical structure of a small molecule. 
+
+Usage: Structure information is stored in the property structureData, in one of three formats: the CML format (see www.xml-cml.org), the SMILES format (see  www.daylight.com/dayhtml/smiles/) or the InChI format (http://www.iupac.org/inchi/). The structureFormat property specifies which format is used.
+
+Examples: The following SMILES string describes the structure of glucose-6-phosphate:
+&apos;C(OP(=O)(O)O)[CH]1([CH](O)[CH](O)[CH](O)[CH](O)O1)&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ControlledVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: This class represents a term from an external controlled vocabulary (CV).
+Rationale: Controlled Vocabularies mark cases where BioPAX delegates the representation of a complex biological phenomena to an external controlled vocabulary development effort such as Gene Ontology. Each subclass of this class represents one such case and often has an associated &quot;Best-Practice&quot; external resource to use. See the documentation of each subclass for more specific information. Correct usage of controlled vocabularies are critical to data exchange and integration.
+Usage: The individuals belonging to this class must unambiguously refer to the source controlled vocabulary. This can be achieved in two manners:
+The xref property of this class is restricted to the unification xref class. It must point to the source controlled vocabulary.
+Alternatively the rdf-id of the member individuals can be set to the designated MIRIAM URN.
+It is a best practice to do both whenever possible.
+Although it is possible to use multiple unification xrefs to identify semantically identical terms across alternative controlled vocabularies, this is not a recommended practice as it might lead to maintenance issues as the controlled vocabularies change.
+There is no recommended use-case for directly instantiating this class. Please use its subclasses instead.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CovalentBindingFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition : An entity feature that represent the covalently bound state of  a physical entity. 
+
+Rationale: Most frequent covalent modifications to proteins and DNA, such as phosphorylation and metylation are covered by the ModificationFeature class. In these cases, the added groups are simple and stateless therefore they can be captured by a controlled vocabulary. In other cases, such as ThiS-Thilacyl-disulfide, the covalently linked molecules are best represented as a molecular complex. CovalentBindingFeature should be used to model such covalently linked complexes.
+
+Usage: Using this construct, it is possible to represent small molecules as a covalent complex of two other small molecules. The demarcation of small molecules is a general problem and is delegated to small molecule databases.The best practice is not to model using covalent complexes unless at least one of the participants is a protein, DNA or RNA.
+
+Examples:
+disulfide bond
+UhpC + glc-6P -&gt; Uhpc-glc-6p
+acetyl-ACP -&gt; decenoyl-ACP
+charged tRNA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeltaG</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: Standard transformed Gibbs energy change for a reaction written in terms of biochemical reactants.  
+Usage: Delta-G is represented as a 5-tuple of delta-G&apos;&lt;sup&gt;0&lt;/sup&gt;, temperature, ionic strength , pH, and pMg . A conversion in BioPAX may have multiple Delta-G values, representing different measurements for delta-G&apos;&lt;sup&gt;0&lt;/sup&gt; obtained under the different experimental conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DnaReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A DNA reference is a grouping of several DNA entities that are common in sequence.  Members can differ in celular location, sequence features, SNPs, mutations and bound partners.
+
+Comments : Note that this is not a reference gene. Genes are non-physical,stateless continuants. Their physical manifestations can span multiple DNA molecules, sometimes even across chromosomes due to regulatory regions. Similarly a gene is not necessarily made up of deoxyribonucleic acid and can be present in multiple copies ( which are different DNA regions).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DnaRegionReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A DNARegionReference is a grouping of several DNARegion entities that are common in sequence and genomic position.  Members can differ in cellular location, sequence features, SNPs, mutations and bound partners.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EntityFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Description: A characteristic of a physical entity that can change while the entity still retains its biological identity. 
+
+Rationale: Two phosphorylated forms of a protein are strictly speaking different chemical  molecules. It is, however, standard in biology to treat them as different states of the same entity, where the entity is loosely defined based on sequence. Entity Feature class and its subclassses captures these variable characteristics. A Physical Entity in BioPAX represents a pool of  molecules rather than an individual molecule. This is a notion imported from chemistry( See PhysicalEntity). Pools are defined by a set of Entity Features in the sense that a single molecule must have all of the features in the set in order to be considered a member of the pool. Since it is impossible to list and experimentally test all potential features for an  entity, features that are not listed in the selection criteria is neglected Pools can also be defined by the converse by specifying features  that are known to NOT exist in a specific context. As DNA, RNA and Proteins can be hierarchically organized into families based on sequence homology so can entity features. The memberFeature property allows capturing such hierarchical classifications among entity features.
+
+
+Usage: Subclasses of entity feature describe most common biological instances and should be preferred whenever possible. One common usecase for instantiating  entity feature is, for describing active/inactive states of proteins where more specific feature information is not available.  
+
+Examples: Open/close conformational state of channel proteins, &quot;active&quot;/&quot;inactive&quot; states, excited states of photoreactive groups.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EntityReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An entity reference is a grouping of several physical entities across different contexts and molecular states, that share common physical properties and often named and treated as a single entity with multiple states by biologists. 
+
+Rationale:   Many protein, small molecule and gene databases share this point of view, and such a grouping is an important prerequisite for interoperability with those databases. Biologists would often group different pools of molecules in different contexts under the same name. For example cytoplasmic and extracellular calcium have different effects on the cell&apos;s behavior, but they are still called calcium. For DNA, RNA and Proteins the grouping is defined based on a wildtype sequence, for small molecules it is defined by the chemical structure.
+
+Usage: Entity references store the information common to a set of molecules in various states described in the BioPAX document, including database cross-references. For instance, the P53 protein can be phosphorylated in multiple different ways. Each separate P53 protein (pool) in a phosphorylation state would be represented as a different protein (child of physicalEntity) and all things common to all P53 proteins, including all possible phosphorylation sites, the sequence common to all of them and common references to protein databases containing more information about P53 would be stored in a Entity Reference.  
+
+Comments: This grouping has three semantic implications:
+
+1.  Members of different pools share many physical and biochemical properties. This includes their chemical structure, sequence, organism and set of molecules they react with. They will also share a lot of secondary information such as their names, functional groupings, annotation terms and database identifiers.
+
+2. A small number of transitions seperates these pools. In other words it is relatively easy and frequent for a molecule to transform from one physical entity to another that belong to the same reference entity. For example an extracellular calcium can become cytoplasmic, and p53 can become phosphorylated. However no calcium virtually becomes sodium, or no p53 becomes mdm2. In the former it is the sheer energy barrier of a nuclear reaction, in the latter sheer statistical improbability of synthesizing the same sequence without a template. If one thinks about the biochemical network as molecules transforming into each other, and remove edges that respond to transcription, translation, degradation and covalent modification of small molecules, each remaining component is a reference entity.
+
+3. Some of the pools in the same group can overlap. p53-p@ser15 can overlap with p53-p@thr18. Most of the experiments in molecular biology will only check for one state variable, rarely multiple, and never for the all possible combinations. So almost all statements that refer to the state of the molecule talk about a pool that can overlap with other pools. However no overlaps is possible between molecules of different groups.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EntityReferenceTypeVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definiiton: A reference to a term from an entity reference group ontology. As of the writing of this documentation, there is no standard ontology of these terms, though a common type is ‘homology’.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Evidence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The support for a particular assertion, such as the existence of an interaction or pathway. 
+Usage: At least one of confidence, evidenceCode, or experimentalForm must be instantiated when creating an evidence instance. XREF may reference a publication describing the experimental evidence using a publicationXref or may store a description of the experiment in an experimental description database using a unificationXref (if the referenced experiment is the same) or relationshipXref (if it is not identical, but similar in some way e.g. similar in protocol). Evidence is meant to provide more information than just an xref to the source paper.
+Examples: A description of a molecular binding assay that was used to detect a protein-protein interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EvidenceCodeVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the PSI Molecular Interaction ontology (MI) experimental method types, including &quot;interaction detection method&quot;, &quot;participant identification method&quot;, &quot;feature detection method&quot;. Homepage at http://www.psidev.info/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI
+
+Terms from the Pathway Tools Evidence Ontology may also be used. Homepage http://brg.ai.sri.com/evidence-ontology/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentalForm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The form of a physical entity in a particular experiment, as it may be modified for purposes of experimental design.
+Examples: A His-tagged protein in a binding assay. A protein can be tagged by multiple tags, so can have more than 1 experimental form type terms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentalFormVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the PSI Molecular Interaction ontology (MI) participant identification method (e.g. mass spectrometry), experimental role (e.g. bait, prey), experimental preparation (e.g. expression level) type. Homepage at http://www.psidev.info/.  Browse http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0002&amp;termName=participant%20identification%20method
+
+http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0495&amp;termName=experimental%20role
+
+http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0346&amp;termName=experimental%20preparation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FragmentFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An entity feature that represents the resulting physical entity subsequent to a cleavage or degradation event. 
+
+Usage: Fragment Feature can be used to cover multiple types of modfications to the sequence of the physical entity: 
+1.    A protein with a single cleavage site that converts the protein into two fragments (e.g. pro-insulin converted to insulin and C-peptide). TODO: CV term for sequence fragment?  PSI-MI CV term for cleavage site?
+2.    A protein with two cleavage sites that removes an internal sequence e.g. an intein i.e. ABC -&gt; A
+3.    Cleavage of a circular sequence e.g. a plasmid.
+
+In the case of removal ( e.g. intron)  the fragment that is *removed* is specified in the feature location property. In the case of a &quot;cut&quot; (e.g. restriction enzyme cut site) the location of the cut is specified instead.
+Examples: Insulin Hormone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gene</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant that encodes information that can be inherited through replication. 
+Rationale: Gene is an abstract continuant that can be best described as a &quot;schema&quot;, a common conception commonly used by biologists to demark a component within genome. In BioPAX, Gene is considered a generalization over eukaryotic and prokaryotic genes and is used only in genetic interactions.  Gene is often confused with DNA and RNA fragments, however, these are considered the physical encoding of a gene.  N.B. Gene expression regulation makes use of DNA and RNA physical entities and not this class.
+Usage: Gene should only be used for describing GeneticInteractions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InteractionVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the PSI Molecular Interaction ontology (MI) interaction type. Homepage at http://www.psidev.info/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0190&amp;termName=interaction%20type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KPrime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The apparent equilibrium constant, K&apos;, and associated values. 
+Usage: Concentrations in the equilibrium constant equation refer to the total concentrations of  all forms of particular biochemical reactants. For example, in the equilibrium constant equation for the biochemical reaction in which ATP is hydrolyzed to ADP and inorganic phosphate:
+
+K&apos; = [ADP][P&lt;sub&gt;i&lt;/sub&gt;]/[ATP],
+
+The concentration of ATP refers to the total concentration of all of the following species:
+
+[ATP] = [ATP&lt;sup&gt;4-&lt;/sup&gt;] + [HATP&lt;sup&gt;3-&lt;/sup&gt;] + [H&lt;sub&gt;2&lt;/sub&gt;ATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgHATP&lt;sup&gt;-&lt;/sup&gt;] + [Mg&lt;sub&gt;2&lt;/sub&gt;ATP].
+
+The apparent equilibrium constant is formally dimensionless, and can be kept so by inclusion of as many of the terms (1 mol/dm&lt;sup&gt;3&lt;/sup&gt;) in the numerator or denominator as necessary.  It is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log&lt;sub&gt;10&lt;/sub&gt;[Mg&lt;sup&gt;2+&lt;/sup&gt;]). Therefore, these quantities must be specified to be precise, and values for KEQ for biochemical reactions may be represented as 5-tuples of the form (K&apos; T I pH pMg).  This property may have multiple values, representing different measurements for K&apos; obtained under the different experimental conditions listed in the 5-tuple. (This definition adapted from EcoCyc)
+
+See http://www.chem.qmul.ac.uk/iubmb/thermod/ for a thermodynamics tutorial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ModificationFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An entity feature that represents  the covalently modified state of a dna, rna or a protein. 
+
+Rationale: In Biology, identity of DNA, RNA and Protein entities are defined around a wildtype sequence. Covalent modifications to this basal sequence are represented using modificaton features. Since small molecules are identified based on their chemical structure, not sequence, a covalent modification to a small molecule would result in a different molecule. 
+
+Usage: The added groups should be simple and stateless, such as phosphate or methyl groups and are captured by the modificationType controlled vocabulary. In other cases, such as covalently linked proteins, use CovalentBindingFeature instead. 
+
+Instances: A phosphorylation on a protein, a methylation on a DNA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pathway</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A set or series of interactions, often forming a network, which biologists have found useful to group together for organizational, historic, biophysical or other reasons.
+
+Usage: Pathways can be used for demarcating any subnetwork of a BioPAX model. It is also possible to define a pathway without specifying the interactions within the pathway. In this case, the pathway instance could consist simply of a name and could be treated as a &apos;black box&apos;.  Pathways can also soverlap, i.e. a single interaction might belong to multiple pathways. Pathways can also contain sub-pathways. Pathways are continuants.
+
+Synonyms: network, module, cascade,  
+Examples: glycolysis, valine biosynthesis, EGFR signaling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PathwayStep</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A step in an ordered pathway.
+Rationale: Some pathways can have a temporal order. For example,  if the pathway boundaries are based on a perturbation phenotype link, the pathway might start with the perturbing agent and end at gene expression leading to the observed changes. Pathway steps can represent directed compound graphs.
+Usage: Multiple interactions may occur in a pathway step, each should be listed in the stepProcess property. Order relationships between pathway steps may be established with the nextStep slot. If the reaction contained in the step is a reversible biochemical reaction but physiologically has a direction in the context of this pathway, use the subclass BiochemicalPathwayStep.
+
+Example: A metabolic pathway may contain a pathway step composed of one biochemical reaction (BR1) and one catalysis (CAT1) instance, where CAT1 describes the catalysis of BR1. The M phase of the cell cycle, defined as a pathway, precedes the G1 phase, also defined as a pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhenotypeVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The phenotype measured in the experiment e.g. growth rate or viability of a cell. This is only the type, not the value e.g. for a synthetic lethal interaction, the phenotype is viability, specified by ID: PATO:0000169, &quot;viability&quot;, not the value (specified by ID: PATO:0000718, &quot;lethal (sensu genetics)&quot;. A single term in a phenotype controlled vocabulary can be referenced using the xref, or the PhenoXML describing the PATO EQ model phenotype description can be stored as a string in PATO-DATA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProteinReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Description: A protein reference is a grouping of several protein entities that are encoded by the same genetic sequence. Members can differ in any combination of cellular location, sequence features and bound partners.
+Rationale: Protein molecules, encoded by the same genetic sequence can be present in (combinatorially many) different states, as a result of post translational modifications and non-covalent bonds. Each state, chemically, is a different pool of molecules. They are, however, related to each other because:
+They all share the same &quot;base&quot; genetic sequence.
+They can only be converted to each other but not to any other protein
+Comments:Most Protein databases, including UniProt would map one to one with ProteinReferences in BioPAX.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Provenance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: The direct source of pathway data or score.
+Usage: This does not store the trail of sources from the generation of the data to this point, only the last known source, such as a database, tool or algorithm. The xref property may contain a publicationXref referencing a publication describing the data source (e.g. a database publication). A unificationXref may be used when pointing to an entry in a database of databases describing this database.
+Examples: A database, scoring method or person name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PublicationXref</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An xref that defines a reference to a publication such as a book, journal article, web page, or software manual.
+Usage:  The reference may or may not be in a database, although references to PubMed are preferred when possible. The publication should make a direct reference to the instance it is attached to. Publication xrefs should make use of PubMed IDs wherever possible. The DB property of an xref to an entry in PubMed should use the string &quot;PubMed&quot; and not &quot;MEDLINE&quot;.
+Examples: PubMed:10234245</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelationshipTypeVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: Vocabulary for defining relationship Xref types. A reference to the PSI Molecular Interaction ontology (MI) Cross Reference type. Homepage at http://www.psidev.info/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0353&amp;termName=cross-reference%20type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelationshipXref</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An xref that defines a reference to an entity in an external resource that does not have the same biological identity as the referring entity.
+Usage: There is currently no controlled vocabulary of relationship types for BioPAX, although one will be created in the future if a need develops.
+Examples: A link between a gene G in a BioPAX data collection, and the protein product P of that gene in an external database. This is not a unification xref because G and P are different biological entities (one is a gene and one is a protein). Another example is a relationship xref for a protein that refers to the Gene Ontology biological process, e.g. &apos;immune response,&apos; that the protein is involved in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RnaReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Defintion: A RNA  reference is a grouping of several RNA entities that are either encoded by the same gene or replicates of the same genome.  Members can differ in celular location, sequence features and bound partners. Currently conformational states (such as hairpin) are not covered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RnaRegionReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A RNARegion reference is a grouping of several RNARegion entities that are common in sequence and genomic position.  Members can differ in celular location, sequence features, mutations and bound partners.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Score</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A score associated with a publication reference describing how the score was determined, the name of the method and a comment briefly describing the method.
+Usage:  The xref must contain at least one publication that describes the method used to determine the score value. There is currently no standard way of describing  values, so any string is valid.
+Examples: The statistical significance of a result, e.g. &quot;p&lt;0.05&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequenceInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An interval on a sequence. 
+Usage: Interval is defined as an ordered pair of SequenceSites. All of the sequence from the begin site to the end site (inclusive) is described, not any subset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequenceLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A location on a nucleotide or amino acid sequence.
+Usage: For most purposes it is more appropriate to use subclasses of this class. Direct instances of SequenceLocation can be used for uknown locations that can not be classified neither as an interval nor a site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequenceModificationVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definiiton: A reference to the PSI Molecular Interaction ontology (MI) of covalent sequence modifications. Homepage at http://www.psidev.info/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0252&amp;termName=biological%20feature. Only children that are covelent modifications at specific positions can be used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequenceRegionVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to a controlled vocabulary of sequence regions, such as InterPro or Sequence Ontology (SO). Homepage at http://www.sequenceontology.org/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=SO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SequenceSite</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: Describes a site on a sequence, i.e. the position of a single nucleotide or amino acid.
+Usage: A sequence site is always defined based on the reference sequence of the owning entity. For DNARegion and RNARegion it is relative to the region itself not the genome or full RNA molecule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SmallMoleculeReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A small molecule reference is a grouping of several small molecule entities  that have the same chemical structure.  Members can differ in celular location and bound partners. Covalent modifications of small molecules are not considered as state changes but treated as different molecules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stoichiometry</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: Stoichiometric coefficient of a physical entity in the context of a conversion or complex.
+Usage: For each participating element there must be 0 or 1 stoichiometry element. A non-existing stoichiometric element is treated as unknown.
+This is an n-ary bridge for left, right and component properties. Relative stoichiometries ( e.g n, n+1) often used for describing polymerization is not supported.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TissueVocabulary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference to the BRENDA (BTO). Homepage at http://www.brenda-enzymes.info/.  Browse at http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=BTO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UnificationXref</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A unification xref defines a reference to an entity in an external resource that has the same biological identity as the referring entity
+Rationale: Unification xrefs are critically important for data integration. In the future they may be replaced by direct miriam links and rdf:id based identity management. 
+
+Usage: For example, if one wished to link from a database record, C, describing a chemical compound in a BioPAX data collection to a record, C&apos;, describing the same chemical compound in an external database, one would use a unification xref since records C and C&apos; describe the same biological identity. Generally, unification xrefs should be used whenever possible, although there are cases where they might not be useful, such as application to application data exchange.Identity of interactions can be computed based on the  identity of its participants. An xref in a protein pointing to a gene, e.g. in the LocusLink database17, would not be a unification xref since the two entities do not have the same biological identity (one is a protein, the other is a gene). Instead, this link should be a captured as a relationship xref. References to an external controlled vocabulary term within the OpenControlledVocabulary class should use a unification xref where possible (e.g. GO:0005737).
+Examples: An xref in a protein instance pointing to an entry in the Swiss-Prot database, and an xref in an RNA instance pointing to the corresponding RNA sequence in the RefSeq database..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UtilityClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: This is a placeholder for classes, used for annotating the &quot;Entity&quot; and its subclasses. Mostly, these are not  an &quot;Entity&quot; themselves. Examples include references to external databases, controlled vocabularies, evidence and provenance.
+
+Rationale: Utility classes are created when simple slots are insufficient to describe an aspect of an entity or to increase compatibility of this ontology with other standards.  
+
+Usage: The utilityClass class is actually a metaclass and is only present to organize the other helper classes under one class hierarchy; instances of utilityClass should never be created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Xref</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A reference from an instance of a class in this ontology to an object in an external resource.
+Rationale: Xrefs in the future can be removed in the future in favor of explicit miram links. 
+Usage: For most cases one of the subclasses of xref should be used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#absoluteRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Absolute location as defined by the referenced sequence database record. E.g. an operon has a absolute region on the DNA molecule referenced by the UnificationXref.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#author</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The authors of this publication, one per property value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#availability</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the availability of this data (e.g. a copyright statement).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bindsTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A binding feature represents a &quot;half&quot; of the bond between two entities. This property points to another binding feature which represents the other half. The bond can be covalent or non-covalent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#catalysisDirection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property represents the direction of this catalysis under all
+physiological conditions if there is one.
+
+Note that chemically a catalyst will increase the rate of the reaction
+in both directions. In biology, however, there are cases where the
+enzyme is expressed only when the controlled bidirectional conversion is
+on one side of the chemical equilibrium. For example E.Coli&apos;s lac operon ensures that lacZ gene is only synthesized when there is enough lactose in the medium.  If that is the case and the controller, under biological conditions, is always catalyzing the conversion in one direction then this fact can be
+captured using this property. If the enzyme is active for both
+directions, or the conversion is not bidirectional, this property should
+be left empty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cellType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A cell type, e.g. &apos;HeLa&apos;. This should reference a term in a controlled vocabulary of cell types. Best practice is to refer to OBO Cell Ontology. http://www.obofoundry.org/cgi-bin/detail.cgi?id=cell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cellularLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A cellular location, e.g. &apos;cytoplasm&apos;. This should reference a term in the Gene Ontology Cellular Component ontology. The location referred to by this property should be as specific as is known. If an interaction is known to occur in multiple locations, separate interactions (and physicalEntities) must be created for each different location.  If the location of a participant in a complex is unspecified, it may be assumed to be the same location as that of the complex. 
+
+ A molecule in two different cellular locations are considered two different physical entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#chemicalFormula</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The chemical formula of the small molecule. Note: chemical formula can also be stored in the STRUCTURE property (in CML). In case of disagreement between the value of this property and that in the CML file, the CML value takes precedence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cofactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any cofactor(s) or coenzyme(s) required for catalysis of the conversion by the enzyme. This is a suproperty of participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#comment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment on the data in the container class. This property should be used instead of the OWL documentation elements (rdfs:comment) for instances because information in &apos;comment&apos; is data to be exchanged, whereas the rdfs:comment field is used for metadata about the structure of the BioPAX ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#componentStoichiometry</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The stoichiometry of components in a complex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#confidence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Confidence in the containing instance.  Usually a statistical measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#controlType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Defines the nature of the control relationship between the controller and the controlled entities.
+
+The following terms are possible values:
+
+ACTIVATION: General activation. Compounds that activate the specified enzyme activity by an unknown mechanism. The mechanism is defined as unknown, because either the mechanism has yet to be elucidated in the experimental literature, or the paper(s) curated thus far do not define the mechanism, and a full literature search has yet to be performed.
+
+The following term can not be used in the catalysis class:
+INHIBITION: General inhibition. Compounds that inhibit the specified enzyme activity by an unknown mechanism. The mechanism is defined as unknown, because either the mechanism has yet to be elucidated in the experimental literature, or the paper(s) curated thus far do not define the mechanism, and a full literature search has yet to be performed.
+
+The following terms can only be used in the modulation class (these definitions from EcoCyc):
+INHIBITION-ALLOSTERIC
+Allosteric inhibitors decrease the specified enzyme activity by binding reversibly to the enzyme and inducing a conformational change that decreases the affinity of the enzyme to its substrates without affecting its VMAX. Allosteric inhibitors can be competitive or noncompetitive inhibitors, therefore, those inhibition categories can be used in conjunction with this category.
+
+INHIBITION-COMPETITIVE
+Competitive inhibitors are compounds that competitively inhibit the specified enzyme activity by binding reversibly to the enzyme and preventing the substrate from binding. Binding of the inhibitor and substrate are mutually exclusive because it is assumed that the inhibitor and substrate can both bind only to the free enzyme. A competitive inhibitor can either bind to the active site of the enzyme, directly excluding the substrate from binding there, or it can bind to another site on the enzyme, altering the conformation of the enzyme such that the substrate can not bind to the active site.
+
+INHIBITION-IRREVERSIBLE
+Irreversible inhibitors are compounds that irreversibly inhibit the specified enzyme activity by binding to the enzyme and dissociating so slowly that it is considered irreversible. For example, alkylating agents, such as iodoacetamide, irreversibly inhibit the catalytic activity of some enzymes by modifying cysteine side chains.
+
+INHIBITION-NONCOMPETITIVE
+Noncompetitive inhibitors are compounds that noncompetitively inhibit the specified enzyme by binding reversibly to both the free enzyme and to the enzyme-substrate complex. The inhibitor and substrate may be bound to the enzyme simultaneously and do not exclude each other. However, only the enzyme-substrate complex (not the enzyme-substrate-inhibitor complex) is catalytically active.
+
+INHIBITION-OTHER
+Compounds that inhibit the specified enzyme activity by a mechanism that has been characterized, but that cannot be clearly classified as irreversible, competitive, noncompetitive, uncompetitive, or allosteric.
+
+INHIBITION-UNCOMPETITIVE
+Uncompetitive inhibitors are compounds that uncompetitively inhibit the specified enzyme activity by binding reversibly to the enzyme-substrate complex but not to the enzyme alone.
+
+ACTIVATION-NONALLOSTERIC
+Nonallosteric activators increase the specified enzyme activity by means other than allosteric.
+
+ACTIVATION-ALLOSTERIC
+Allosteric activators increase the specified enzyme activity by binding reversibly to the enzyme and inducing a conformational change that increases the affinity of the enzyme to its substrates without affecting its VMAX.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#controlled</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The entity that is controlled, e.g., in a biochemical reaction, the reaction is controlled by an enzyme. Controlled is a sub-property of participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#controller</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The controlling entity, e.g., in a biochemical reaction, an enzyme is the controlling entity of the reaction. CONTROLLER is a sub-property of PARTICIPANTS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conversionDirection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property represents the direction of the reaction. If a reaction will run in a single direction under all biological contexts then it is considered irreversible and has a direction. Otherwise it is reversible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dataSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A free text description of the source of this data, e.g. a database or person name. This property should be used to describe the source of the data. This is meant to be used by databases that export their data to the BioPAX format or by systems that are integrating data from multiple sources. The granularity of use (specifying the data source in many or few instances) is up to the user. It is intended that this property report the last data source, not all data sources that the data has passed through from creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#db</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the external database to which this xref refers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dbVersion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The version of the external database in which this xref was last known to be valid. Resources may have recommendations for referencing dataset versions. For instance, the Gene Ontology recommends listing the date the GO terms were downloaded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deltaG</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For biochemical reactions, this property refers to the standard transformed Gibbs energy change for a reaction written in terms of biochemical reactants (sums of species), delta-G
+
+Since Delta-G can change based on multiple factors including ionic strength and temperature a reaction can have multiple DeltaG values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deltaGPrime0</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For biochemical reactions, this property refers to the standard transformed Gibbs energy change for a reaction written in terms of biochemical reactants (sums of species), delta-G&apos;&lt;sup&gt;o&lt;/sup&gt;.
+
+  delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; = -RT lnK&apos;
+and
+  delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; = delta-H&apos;&lt;sup&gt;o&lt;/sup&gt; - T delta-S&apos;&lt;sup&gt;o&lt;/sup&gt;
+
+delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; has units of kJ/mol.  Like K&apos;, it is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log&lt;sub&gt;10&lt;/sub&gt;[Mg&lt;sup&gt;2+&lt;/sup&gt;]). Therefore, these quantities must be specified, and values for DELTA-G for biochemical reactions are represented as 5-tuples of the form (delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; T I pH pMg).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deltaH</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For biochemical reactions, this property refers to the standard transformed enthalpy change for a reaction written in terms of biochemical reactants (sums of species), delta-H&apos;&lt;sup&gt;o&lt;/sup&gt;.
+
+  delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; = delta-H&apos;&lt;sup&gt;o&lt;/sup&gt; - T delta-S&apos;&lt;sup&gt;o&lt;/sup&gt;
+
+Units: kJ/mole
+
+(This definition from EcoCyc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deltaS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For biochemical reactions, this property refers to the standard transformed entropy change for a reaction written in terms of biochemical reactants (sums of species), delta-S&apos;&lt;sup&gt;o&lt;/sup&gt;.
+
+  delta-G&apos;&lt;sup&gt;o&lt;/sup&gt; = delta-H&apos;&lt;sup&gt;o&lt;/sup&gt; - T delta-S&apos;&lt;sup&gt;o&lt;/sup&gt;
+
+(This definition from EcoCyc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#displayName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An abbreviated name for this entity, preferably a name that is short enough to be used in a visualization application to label a graphical element that represents this entity. If no short name is available, an xref may be used for this purpose by the visualization application.
+
+Warning:  Subproperties of name are functional, that is we expect to have only one standardName and shortName for a given entity. If a user decides to assign a different name to standardName or shortName, they have to remove the old triplet from the model too. If the old name should be retained as a synonym a regular &quot;name&quot; property should also be introduced with the old name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eCNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The unique number assigned to a reaction by the Enzyme Commission of the International Union of Biochemistry and Molecular Biology.
+
+Note that not all biochemical reactions currently have EC numbers assigned to them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Variable features that are observed for the entities of this entityReference - such as known PTM or methylation sites and non-covalent bonds. Note that this is an aggregate list of all known features and it does not represent a state itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Reference entity for this physical entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityReferenceType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A controlled vocabulary term that is used to describe the type of grouping such as homology or functional group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Scientific evidence supporting the existence of the entity as described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidenceCode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A pointer to a term in an external controlled vocabulary, such as the GO, PSI-MI or BioCyc evidence codes, that describes the nature of the support, such as &apos;traceable author statement&apos; or &apos;yeast two-hybrid&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimentalFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A feature of the experimental form of the participant of the interaction, such as a protein tag. It is not expected to occur in vivo or be necessary for the interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimentalForm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The experimental forms associated with an evidence instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimentalFormDescription</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Descriptor of this experimental form from a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#experimentalFormEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The gene or physical entity that this experimental form describes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#feature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence features of the owner physical entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#featureLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Location of the feature on the sequence of the interactor.
+For modification features this is the modified base or residue. For binding features this is the binding site and for fragment features this is the location of the fragment on the &quot;base&quot; sequence.
+One feature may have more than one location, used e.g. for features which involve sequence positions close in the folded, three-dimensional state of a protein, but non-continuous along the sequence.
+Small Molecules can have binding features but currently it is not possible to define the binding site on the small molecules. In those cases this property should not be specified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#featureLocationType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A controlled vocabulary term describing the type of the sequence location of the feature such as C-Terminal or SH2 Domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#id</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The primary identifier in the external database of the object to which this xref refers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#idVersion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The version number of the identifier (ID). E.g. The RefSeq accession number NM_005228.3 should be split into NM_005228 as the ID and 3 as the ID-VERSION.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interactionScore</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The score of an interaction e.g. a genetic interaction score.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interactionType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Controlled vocabulary annotating the interaction type for example, &quot;phosphorylation reaction&quot;. This annotation is meant to be human readable and may not be suitable for computing tasks, like reasoning, that require formal vocabulary systems. For instance, this information would be useful for display on a web page or for querying a database. The PSI-MI interaction type controlled vocabulary should be used. This is browsable at: 
+http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI&amp;termId=MI%3A0190&amp;termName=interaction%20type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#intraMolecular</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This flag represents whether the binding feature is within the same molecule or not. A true value implies that the entityReferences of this feature and its binding partner are the same.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ionicStrength</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The ionic strength is defined as half of the total sum of the concentration (ci) of every ionic species (i) in the solution times the square of its charge (zi). For example, the ionic strength of a 0.1 M solution of CaCl2 is 0.5 x (0.1 x 22 + 0.2 x 12) = 0.3 M</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kEQ</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This quantity is dimensionless and is usually a single number. The measured equilibrium constant for a biochemical reaction, encoded by the slot KEQ, is actually the apparent equilibrium constant, K&apos;.  Concentrations in the equilibrium constant equation refer to the total concentrations of  all forms of particular biochemical reactants. For example, in the equilibrium constant equation for the biochemical reaction in which ATP is hydrolyzed to ADP and inorganic phosphate:
+
+K&apos; = [ADP][P&lt;sub&gt;i&lt;/sub&gt;]/[ATP],
+
+The concentration of ATP refers to the total concentration of all of the following species:
+
+[ATP] = [ATP&lt;sup&gt;4-&lt;/sup&gt;] + [HATP&lt;sup&gt;3-&lt;/sup&gt;] + [H&lt;sub&gt;2&lt;/sub&gt;ATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgHATP&lt;sup&gt;-&lt;/sup&gt;] + [Mg&lt;sub&gt;2&lt;/sub&gt;ATP].
+
+The apparent equilibrium constant is formally dimensionless, and can be kept so by inclusion of as many of the terms (1 mol/dm&lt;sup&gt;3&lt;/sup&gt;) in the numerator or denominator as necessary.  It is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log&lt;sub&gt;10&lt;/sub&gt;[Mg&lt;sup&gt;2+&lt;/sup&gt;]). Therefore, these quantities must be specified to be precise, and values for KEQ for biochemical reactions may be represented as 5-tuples of the form (K&apos; T I pH pMg).  This property may have multiple values, representing different measurements for K&apos; obtained under the different experimental conditions listed in the 5-tuple. (This definition adapted from EcoCyc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kPrime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The apparent equilibrium constant K&apos;. Concentrations in the equilibrium constant equation refer to the total concentrations of  all forms of particular biochemical reactants. For example, in the equilibrium constant equation for the biochemical reaction in which ATP is hydrolyzed to ADP and inorganic phosphate:
+
+K&apos; = [ADP][P&lt;sub&gt;i&lt;/sub&gt;]/[ATP],
+
+The concentration of ATP refers to the total concentration of all of the following species:
+
+[ATP] = [ATP&lt;sup&gt;4-&lt;/sup&gt;] + [HATP&lt;sup&gt;3-&lt;/sup&gt;] + [H&lt;sub&gt;2&lt;/sub&gt;ATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgATP&lt;sup&gt;2-&lt;/sup&gt;] + [MgHATP&lt;sup&gt;-&lt;/sup&gt;] + [Mg&lt;sub&gt;2&lt;/sub&gt;ATP].
+
+The apparent equilibrium constant is formally dimensionless, and can be kept so by inclusion of as many of the terms (1 mol/dm&lt;sup&gt;3&lt;/sup&gt;) in the numerator or denominator as necessary.  It is a function of temperature (T), ionic strength (I), pH, and pMg (pMg = -log&lt;sub&gt;10&lt;/sub&gt;[Mg&lt;sup&gt;2+&lt;/sup&gt;]).
+(Definition from EcoCyc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#left</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The participants on the left side of the conversion interaction. Since conversion interactions may proceed in either the left-to-right or right-to-left direction, occupants of the left property may be either reactants or products. left is a sub-property of participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberEntityReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An entity reference that qualifies for the definition of this group. For example a member of a PFAM protein family.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An entity feature that belongs to this homology grouping.
+These features should be of the same class of this EntityFeature
+These features should be an EntityFeature of an EntityReference which is a memberEntityReference of the EntityReference of this feature.
+If this set is not empty than the sequenceLocation of this feature should be non-specified.
+Example: a homologous phosphorylation site across a protein family.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberPhysicalEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property stores the members of a generic physical entity. 
+
+For representing homology generics a better way is to use generic entity references and generic features. However not all generic logic can be captured by this, such as complex generics or rare cases where feature cardinality is variable. Usages of this property should be limited to such cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modificationType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Description and classification of the feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#molecularWeight</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the molecular weight of the molecule, in daltons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Synonyms for this entity.  standardName and shortName are subproperties of this property and if declared they are automatically considered as names. 
+
+Warning:  Subproperties of name are functional, that is we expect to have only one standardName and shortName for a given entity. If a user decides to assign a different name to standardName or shortName, they have to remove the old triplet from the model too. If the old name should be retained as a synonym a regular &quot;name&quot; property should also be introduced with the old name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nextStep</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The next step(s) of the pathway.  Contains zero or more pathwayStep instances.  If there is no next step, this property is empty. Multiple pathwayStep instances indicate pathway branching.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#notFeature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence features where the owner physical entity has a feature. If not specified, other potential features are not known.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organism</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An organism, e.g. &apos;Homo sapiens&apos;. This is the organism that the entity is found in. Pathways may not have an organism associated with them, for instance, reference pathways from KEGG. Sequence-based entities (DNA, protein, RNA) may contain an xref to a sequence database that contains organism information, in which case the information should be consistent with the value for ORGANISM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pMg</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A measure of the concentration of magnesium (Mg) in solution. (pMg = -log&lt;sub&gt;10&lt;/sub&gt;[Mg&lt;sup&gt;2+&lt;/sup&gt;])</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#participant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property lists the entities that participate in this interaction. For example, in a biochemical reaction, the participants are the union of the reactants and the products of the reaction. This property has a number of sub-properties, such as LEFT and RIGHT used in the biochemicalInteraction class. Any participant listed in a sub-property will automatically be assumed to also be in PARTICIPANTS by a number of software systems, including Protege, so this property should not contain any instances if there are instances contained in a sub-property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#participantStoichiometry</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stoichiometry of the left and right participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pathwayComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The set of interactions and/or pathwaySteps in this pathway/network. Each instance of the pathwayStep class defines: 1) a set of interactions that together define a particular step in the pathway, for example a catalysis instance and the conversion that it catalyzes; 2) an order relationship to one or more other pathway steps (via the NEXT-STEP property). Note: This ordering is not necessarily temporal - the order described may simply represent connectivity between adjacent steps. Temporal ordering information should only be inferred from the direction of each interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pathwayOrder</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The ordering of components (interactions and pathways) in the context of this pathway. This is useful to specific circular or branched pathways or orderings when component biochemical reactions are normally reversible, but are directed in the context of this pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#patoData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The phenotype data from PATO, formatted as PhenoXML (defined at http://www.fruitfly.org/~cjm/obd/formats.html)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ph</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A measure of acidity and alkalinity of a solution that is a number on a scale on which a value of 7 represents neutrality and lower numbers indicate increasing acidity and higher numbers increasing alkalinity and on which each unit of change represents a tenfold change in acidity or alkalinity and that is the negative logarithm of the effective hydrogen-ion concentration or hydrogen-ion activity in gram equivalents per liter of the solution. (Definition from Merriam-Webster Dictionary)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phenotype</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The phenotype quality used to define this genetic interaction e.g. viability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#physicalEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The physical entity to be annotated with stoichiometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#positionStatus</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The confidence status of the sequence position. This could be:
+EQUAL: The SEQUENCE-POSITION is known to be at the SEQUENCE-POSITION.
+GREATER-THAN: The site is greater than the SEQUENCE-POSITION.
+LESS-THAN: The site is less than the SEQUENCE-POSITION.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#product</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The product of a template reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relationshipType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition:A controlled vocabulary term that defines the type of relationship that this xref defines.
+Usage: There is currently no controlled vocabulary of relationship types for BioPAX, although one will be created in the future as the usage of this property increases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#right</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The participants on the right side of the conversion interaction. Since conversion interactions may proceed in either the left-to-right or right-to-left direction, occupants of the RIGHT property may be either reactants or products. RIGHT is a sub-property of PARTICIPANTS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scoreSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property defines the source of the scoring methodology --
+a publication or web site describing the scoring methodology and the range of values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequence</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polymer sequence in uppercase letters. For DNA, usually A,C,G,T letters representing the nucleosides of adenine, cytosine, guanine and thymine, respectively; for RNA, usually A, C, U, G; for protein, usually the letters corresponding to the 20 letter IUPAC amino acid code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequenceIntervalBegin</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The begin position of a sequence interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequenceIntervalEnd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The end position of a sequence interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sequencePosition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The integer listed gives the position. The first base or amino acid is position 1. In combination with the numeric value, the property &apos;POSITION-STATUS&apos; allows to express fuzzy positions, e.g. &apos;less than 4&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The source  in which the reference was published, such as: a book title, or a journal title and volume and pages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#spontaneous</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Specifies whether a conversion occurs spontaneously or not. If the spontaneity is not known, the SPONTANEOUS property should be left empty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#standardName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The preferred full name for this entity, if exists assigned by a standard nomenclature organization such as HUGO Gene Nomenclature Committee.
+
+Warning:  Subproperties of name are functional, that is we expect to have only one standardName and shortName for a given entity. If a user decides to assign a different name to standardName or shortName, they have to remove the old triplet from the model too. If the old name should be retained as a synonym a regular &quot;name&quot; property should also be introduced with the old name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stepConversion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The central process that take place at this step of the biochemical pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stepDirection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Direction of the conversion in this particular pathway context. 
+This property can be used for annotating direction of enzymatic activity. Even if an enzyme catalyzes a reaction reversibly, the flow of matter through the pathway will force the equilibrium in a given direction for that particular pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stepProcess</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An interaction or a pathway that are a part of this pathway step.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stoichiometricCoefficient</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stoichiometric coefficient for one of the entities in an interaction or complex. This value can be any rational number. Generic values such as &quot;n&quot; or &quot;n+1&quot; should not be used - polymers are currently not covered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#structure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the chemical structure and other information about this molecule, using an instance of class chemicalStructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#structureData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This property holds a string of data defining chemical structure,in one of the three formats:&lt;a href =&quot;www.xml-cml.org&quot;&gt;CML&lt;/a&gt;, &lt;a href = &quot;www.daylight.com/dayhtml/smiles/&quot;&gt;SMILES&lt;/a&gt; or &lt;a href=&quot;http://www.iupac.org/inchi/&quot;&gt;InChI&lt;/a&gt;. If, for example,the CML format is used, then the value of this property is a string containing the XML encoding of the CML data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#structureFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property specifies which format is used to define chemical structure data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#subRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The sub region of a region or nucleic acid molecule. The sub region must be wholly part of the region, not outside of it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temperature</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Temperature in Celsius</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#template</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The template molecule that is used in this template reaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#templateDirection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The direction of the template reaction on the template.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#term</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The external controlled vocabulary term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tissue</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An external controlled vocabulary of tissue types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#title</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The title of the publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#url</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The URL at which the publication can be found, if it is available through the Web.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#value</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The value of the score. This can be a numerical or categorical value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#xref</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Values of this property define external cross-references from this entity to entities in external databases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#year</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The year in which this publication was published.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

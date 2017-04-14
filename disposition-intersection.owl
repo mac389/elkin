@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_of_to_signal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_of_to_signal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_to_signal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_target_pathways -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_target_pathways"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_to_signal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_to_signal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_member -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_member">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_to_signal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_to_signal_through_Gi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_inhibitory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_excitatory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#PKA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#PKA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_excitatory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_inhibitory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition_target_pathways"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_excitatory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_AB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_AB">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_A"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_disposition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_B"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_to_signal_through_Gi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_to_signal_through_Gi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_to_signal_through_Gs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition_to_signal_through_Gs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathaway_PKA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathaway_PKA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_member"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#PKA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_excitatory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_excitatory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathaway_PKA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_member"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_inhibitory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathway_PKA_inhibitory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#signaling_pathaway_PKA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#has_member"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nirgal/ontologies/2017/3/untitled-ontology-30#Gi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
